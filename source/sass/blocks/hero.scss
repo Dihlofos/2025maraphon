@@ -11,7 +11,7 @@
          height: auto;
          gap: 1.2rem;
       }
-   
+
       //  @media (max-width: $mobile) {
       //    margin: 0 0 4rem;
       //  }
@@ -34,7 +34,7 @@
       display: block;
       height: auto;
    }
-    
+
    .logo--dep {
       width: 91px;
 
@@ -43,7 +43,7 @@
 
        }
    }
-   
+
    .logo--sport {
       width: 108px;
 
@@ -52,7 +52,7 @@
 
        }
    }
-   
+
    .logo--pobeda {
       width: 32px;
 
@@ -76,7 +76,7 @@
       margin-inline: auto;
 
       @media (max-width: $mobile) {
-         margin-block: 4.5rem 2.4rem;      
+         margin-block: 4.5rem 2.4rem;
       }
    }
 
@@ -89,22 +89,23 @@
 
       @media (max-width: $tablet) {
          gap: 2rem;
+         margin-bottom: 0;
       }
    }
 
    &__title-big {
       font-family: $mossport;
       font-size: 17.4rem;
-      // font-size: clamp(2rem, 10vw, 17.4rem); 
+      // font-size: clamp(2rem, 10vw, 17.4rem);
 
-      line-height: 100%; 
-      display: inline-block; 
+      line-height: 100%;
+      display: inline-block;
       width: 100%;
       text-transform: uppercase;
       // margin-bottom: -4rem;
 
       @media (max-width: $tablet) {
-         font-size: 10.4rem; 
+         font-size: 10.4rem;
       }
 
       @media (max-width: $mobile) {
@@ -115,7 +116,7 @@
    &__title-top img {
       height: 100%;
       max-height: 12.1rem;
-      width: auto; 
+      width: auto;
       object-fit: contain;
       flex-shrink: 0;
 
@@ -171,7 +172,7 @@
       line-height: 101%;
 
       @media (max-width: $mobile) {
-         font-size: 1.4rem;       
+         font-size: 1.4rem;
       }
    }
 
@@ -196,7 +197,7 @@
       }
    }
 
-   &__bottom-content, 
+   &__bottom-content,
    &__bottom-content a {
       font-family: $myriad;
       font-size: 3rem;
@@ -205,7 +206,7 @@
       color: $white;
 
       @media (max-width: $mobile) {
-         font-size: 1.4rem;       
+         font-size: 1.4rem;
       }
    }
 
@@ -213,9 +214,10 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-top: 6%;
 
       @media (max-width: $tablet) {
-         display: none;     
+         display: none;
       }
    }
 
@@ -223,7 +225,7 @@
       width: 100%;
       height: 100%;
       background-color: $white;
-   
+
       clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
 
       @media (max-width: $tablet) {
@@ -239,36 +241,36 @@
 
       display: flex;
       align-items: center;
-   
+
       clip-path: polygon(
-         0% 0%,           
-         100% 0%,         
-         100% calc(100% - 50px), 
-         calc(100% - 50px) 100%, 
-         0% 100%          
-       );  
+         0% 0%,
+         100% 0%,
+         100% calc(100% - 50px),
+         calc(100% - 50px) 100%,
+         0% 100%
+       );
 
        @media (max-width: $tablet) {
-         max-width: 100%;     
-         height: 7.6rem;  
+         max-width: 100%;
+         height: 7.6rem;
          clip-path: polygon(
-            0% 0%,           
-            100% 0%,         
-            100% calc(100% - 30px), 
-            calc(100% - 30px) 100%, 
-            0% 100%          
+            0% 0%,
+            100% 0%,
+            100% calc(100% - 30px),
+            calc(100% - 30px) 100%,
+            0% 100%
           );
       }
 
        @media (max-width: $mobile) {
- 
+
          clip-path: polygon(
-            0% 0%,           
-            100% 0%,         
-            100% calc(100% - 35px), 
-            calc(100% - 35px) 100%, 
-            0% 100%          
-          );        
+            0% 0%,
+            100% 0%,
+            100% calc(100% - 35px),
+            calc(100% - 35px) 100%,
+            0% 100%
+          );
       }
    }
 
