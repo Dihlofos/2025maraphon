@@ -1,0 +1,98 @@
+.info {
+   background-color: $white;
+   // padding-block: 14.5rem 17rem;
+   
+   .info-container {
+      position: relative;
+
+      .half-green-pseudo {
+         position: absolute;
+         top: 0;
+         right: 0;
+      }
+
+      .dots-pseudo {
+         position: absolute;
+         top: 10rem;
+         left: 40%;
+      }
+
+      .crosses-pseudo {
+         position: absolute;
+         top: 50rem;
+         right: 0;
+      }
+   }
+
+   .info-wrapper {
+      padding-block: 14.5rem 17rem;
+   }
+
+   &__title {
+      font-family: $mossport;
+      font-size: 6rem;
+      font-weight: 400;
+      line-height: 101%; 
+      text-transform: uppercase;
+      color: $green;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      margin-block: 9.3rem 12.8rem;
+   }
+
+   &__item-wrapper {
+      padding: 2.4rem 1.6rem 3.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      background-color: $black;
+      max-width: 26rem;
+
+      clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% calc(100% - 40px),
+            calc(100% - 40px) 100%,
+            0% 100%
+          );
+   }
+
+   &__item-title {
+      font-family: $mossport;
+      font-size: 3.5rem;
+      font-weight: 400;
+      line-height: 101%; /* 35.35px */
+      text-transform: uppercase;
+      color: $green;
+   }
+
+   &__item-text {
+      font-family: $myriad;
+      font-size: 1.5rem;
+      font-weight: 400;
+   }
+
+   &__svgs-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 2.8rem;
+   }
+
+   &__content {
+      margin-block: 12.86rem 6.9rem;
+   }
+
+   &__text {
+      margin-top: 5.4rem;
+      font-family: $myriad;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 84.4rem;
+      color: $black;
+   }
+}

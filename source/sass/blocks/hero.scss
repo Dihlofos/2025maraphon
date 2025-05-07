@@ -1,5 +1,21 @@
 .hero {
 
+   .hero-container {
+      position: relative;
+
+      .half-white-pseudo {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+      }
+   }
+
+   .hero-wrapper {
+      padding-bottom: 17rem;
+   }
+
+   // Top
+
    &__top {
       display: flex;
       flex-direction: row;
@@ -69,8 +85,97 @@
       }
    }
 
+   .cut-corner-top {
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+
+      clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
+
+      @media (max-width: $tablet) {
+         clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30px);
+       }
+   }
+
+   .cut-corner-bottom {
+      max-width: 46rem;
+      width: 100%;
+      height: 100%;
+      background-color: $black-100;
+
+      display: flex;
+      align-items: center;
+
+      clip-path: polygon(
+         0% 0%,
+         100% 0%,
+         100% calc(100% - 50px),
+         calc(100% - 50px) 100%,
+         0% 100%
+       );
+
+       @media (max-width: $tablet) {
+         max-width: 100%;
+         height: 7.6rem;
+         clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% calc(100% - 30px),
+            calc(100% - 30px) 100%,
+            0% 100%
+          );
+      }
+
+       @media (max-width: $mobile) {
+
+         clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% calc(100% - 35px),
+            calc(100% - 35px) 100%,
+            0% 100%
+          );
+      }
+   }
+
+   .text-medium {
+      font-family: $mossport;
+      font-size: 10rem;
+      line-height: 100%;
+      // margin-bottom: -2rem;
+      margin-left: 1.45rem;
+
+      @media (max-width: $tablet) {
+         font-size: 7.5rem;
+         margin-left: 1rem;
+         // margin-bottom: -1.7rem;
+      }
+   }
+
+   // Portal
+
+   &__portal-wrapper {
+      background-color: $black-100;
+      padding: 0.9rem 2rem;
+      width: fit-content;
+      margin-top: 2.3rem;
+   }
+
+   &__portal-wrapper a {
+      color: $white;
+      font-family: $mossport;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+   }
+
+
+   // Tittle
+
    &__title-wrapper {
-      margin-block: 9.1rem 6.4rem;
+      margin-block: 4.1rem 10.5rem;
       width: 100%;
       max-width: fit-content;
       margin-inline: auto;
@@ -131,166 +236,149 @@
       }
    }
 
-   &__bottom {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+   // Place
 
-      @media (max-width: $tablet) {
-         flex-direction: column;
-         gap: 3.5rem;
-      }
-   }
-
-   &__bottom-left {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 3.8rem;
-      margin-top: 1rem;
-
-      @media (max-width: $mobile) {
-         flex-direction: row;
-         gap: 1rem;
-      }
-   }
-
-   &__programm-item {
-      padding: 1rem 2.4rem;
+   &__place {
       background-color: $green;
-      width: fit-content;
-
-      @media (max-width: $mobile) {
-         padding: .6rem 1.3rem;
-      }
-   }
-
-   &__list-text {
-      font-family: $myriad;
-      font-size: 2rem;
-      font-weight: 400;
-      line-height: 101%;
-
-      @media (max-width: $mobile) {
-         font-size: 1.4rem;
-      }
-   }
-
-   &__bottom-right {
-      width: 100%;
-      max-width: 66rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      @media (max-width: $tablet) {
-         max-width: 100%;
-      }
-   }
-
-   &__bottom-content-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      @media (max-width: $tablet) {
-         gap: 2rem;
-      }
-   }
-
-   &__bottom-content,
-   &__bottom-content a {
-      font-family: $myriad;
-      font-size: 3rem;
-      font-weight: 400;
-      line-height: 101%;
-      color: $white;
-
-      @media (max-width: $mobile) {
-         font-size: 1.4rem;
-      }
-   }
-
-   &__bottom-icons {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 6%;
-
-      @media (max-width: $tablet) {
-         display: none;
-      }
-   }
-
-   .cut-corner-top {
-      width: 100%;
-      height: 100%;
-      background-color: $white;
-
-      clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
-
-      @media (max-width: $tablet) {
-         clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30px);
-       }
-   }
-
-   .cut-corner-bottom {
-      max-width: 46rem;
-      width: 100%;
-      height: 100%;
-      background-color: $black;
-
-      display: flex;
-      align-items: center;
-
+      padding: 1.7rem 6rem 1.7rem 2.45rem;
+      margin-bottom: 7rem;
       clip-path: polygon(
          0% 0%,
          100% 0%,
-         100% calc(100% - 50px),
-         calc(100% - 50px) 100%,
+         100% calc(100% - 35px),
+         calc(100% - 35px) 100%,
          0% 100%
-       );
+      );
 
-       @media (max-width: $tablet) {
-         max-width: 100%;
-         height: 7.6rem;
-         clip-path: polygon(
-            0% 0%,
-            100% 0%,
-            100% calc(100% - 30px),
-            calc(100% - 30px) 100%,
-            0% 100%
-          );
-      }
+   }
 
-       @media (max-width: $mobile) {
+   &__place-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+   }
 
-         clip-path: polygon(
-            0% 0%,
-            100% 0%,
-            100% calc(100% - 35px),
-            calc(100% - 35px) 100%,
-            0% 100%
-          );
+   &__place-text {
+      font-family: Mossport;
+      font-size: 3.5rem;
+      font-weight: 400;
+      line-height: 101%;
+      text-transform: uppercase;
+      color: $white;
+      max-width: 50.1rem;
+   }
+
+   &__place-title {
+      font-family: Mossport;
+      font-size: 7.5rem;
+      font-weight: 400;
+      line-height: 101%;
+      text-transform: uppercase;
+      color: $white;
+   }
+
+   // Info   
+   
+   &__svg-decorations {
+      display: flex;
+      flex-direction: row;
+      gap: 13.9rem;
+   }
+
+   &__content-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      margin-top: 7.44rem;
+   }
+
+   &__content-left {
+      flex: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+   }
+
+   &__content-text {
+      font-family: $myriad;
+      font-size: 2.5rem;
+      font-weight: 400; 
+      color: $white;     
+   }
+
+   &__content-text span {
+      color: $black;     
+   }
+
+   &__content-right {
+      flex: 40%;
+      position: relative;
+
+         .pseudo-arrows {
+            position: absolute;
+            top: -17rem;
+            left: 50%;
+            transform: translateX(-80%);
+            display: flex;
+            flex-direction: row;
+         }
+
+      .right-arrow {
+         margin-left: -6rem;
       }
    }
 
-   .text-medium {
-      font-family: $mossport;
-      font-size: 10rem;
-      line-height: 100%;
-      // margin-bottom: -2rem;
-      margin-left: 1.45rem;
-
-      @media (max-width: $tablet) {
-         font-size: 7.5rem;
-         margin-left: 1rem;
-         // margin-bottom: -1.7rem;
-      }
+   &__content-link-container {
+      margin-top: 5.2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3.7rem;
    }
+
+   &__content-link-container img {
+      flex: 1;
+   }
+
+   &__content-link-wrapper {
+      flex: 1;
+   }
+
+   &__content-link-wrapper-top,
+   &__content-link-wrapper-bottom {
+      width: 100%;
+      height: 3.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__content-link-wrapper-top {
+      background-color: $red;
+   }
+
+   &__content-link-wrapper-text {
+      font-family: Mossport;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      color: $white;
+   }
+
+   &__content-link-wrapper-bottom {
+      background-color: $white;
+   }
+
+   &__content-link-wrapper-bottom a {
+      font-family: "Myriad Pro";
+      font-size: 1.5rem;
+      font-weight: 400;
+   }
+
 }
 
-.cut-corner-bottom,
-.hero__bottom-left {
-   opacity: 0;
-}
 
