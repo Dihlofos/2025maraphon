@@ -1,5 +1,6 @@
 .schedule {
-   padding-block: 14.5rem 28.3rem;
+   // padding-block: 14.5rem 28.3rem;
+   padding-top: 14.5rem;
    background-color: $bgcolor;
 
    .schedule-container {
@@ -80,11 +81,14 @@
       font-weight: 400;
    }
 
+   //Stages
 
-
-   .stage-switcher {
+   .stage-container {
       background-color: $black;
       padding: 5.5rem 6rem;
+   }
+
+   .stage-switcher {
 
       &__buttons {
          display: flex;
@@ -112,65 +116,66 @@
          font-weight: 400;
          line-height: normal;
       }
+   }
 
-      &__title {
-         color: $green;
-         font-family: $mossport;
-         font-size: 4rem;
-         font-weight: 400;
-         line-height: 101%; /* 40.4px */
-         text-transform: uppercase;
-      }
 
-      &__list {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         column-gap: 4.5rem;
-         row-gap: 3.5rem;
-      }
+   .schedule-block-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 4.5rem;
+      row-gap: 3.5rem;
+   }
 
-      &__item {
-         padding: 1.7rem 1.3rem;
-         background-color: $white;
-         display: flex;
-         flex-direction: column;
-         gap: 1.3rem;
-      }
+   .schedule-block-title {
+      color: $green;
+      font-family: $mossport;
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 101%; /* 40.4px */
+      text-transform: uppercase;
+   }
 
-      &__item-time {
-         color: $green;
-         font-family: $mossport;
-         font-size: 4rem;
-         font-weight: 400;
-         line-height: 101%; /* 40.4px */
-         text-transform: uppercase;
-      }
+   .schedule-block-item {
+      padding: 1.7rem 1.3rem;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+   }
 
-      &__item-image-wrapper {
-         width: 100%;
-         height: 11.3rem;
-         background-color: gray;
-      }
+   .schedule-block-time {
+      color: $green;
+      font-family: $mossport;
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 101%; /* 40.4px */
+      text-transform: uppercase;
+   }
 
-      &__item-desc {
-         color: $black;
-         font-family: $myriad;
-         font-size: 1.5rem;
-         font-weight: 400;
-         line-height: normal;
-      }
+   .schedule-block-image-wrapper {
+      width: 100%;
+      height: 11.3rem;
+      background-color: gray;
+   }
 
-      &__registration {
-         padding: 0.3rem 1rem;
-         background-color: $bgcolor;
-         color: $black;
-         font-family: $myriad;
-         font-size: 1.5rem;
-         font-weight: 400;
-         line-height: normal;
-         text-decoration: none;
-         max-width: fit-content;
-      }
+   .schedule-block-desc {
+      color: $black;
+      font-family: $myriad;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: normal;
+   }
+
+   .schedule-block-registration {
+      padding: 0.3rem 1rem;
+      background-color: $bgcolor;
+      color: $black;
+      font-family: $myriad;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+      max-width: fit-content;
    }
 
    .stage-content,
@@ -178,7 +183,19 @@
       display: flex;
       flex-direction: column;
       gap: 5.5rem;
+      z-index: 5;
    }
+
+   // .stage-container {
+   //    position: relative;
+
+   //    .arrow-down-pseudo {
+   //       position: absolute;
+   //       right: 0rem;
+   //       bottom: -15rem;
+   //       z-index: -1;
+   //    }
+   // }
 
    .stage-switcher__content .stage-content {
       display: none;
@@ -191,6 +208,96 @@
    .stage-btn.active {
       background-color: $green;
       color: $white;
+   }
+
+   // Trainings
+
+   &__dots-wrapper {
+      padding-block: 7.8rem 9.65rem;
+      position: relative;
+      overflow: hidden;
+
+
+      .arrow-down-pseudo {
+         position: absolute;
+         right: 0rem;
+         top: -10rem;
+         z-index: 0;
+      }
+   }
+
+   &__text {
+      padding-block: 6.7rem;
+      color: $black;
+      font-family: $myriad;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: normal;
+
+      position: relative;
+      overflow: hidden;
+
+      .arrows-green-big-pseudo {
+         position: absolute;
+         right: 0;
+         top: 11rem;
+      }
+   }
+
+   .slider-fitness-wrapper {
+      position: relative;
+      height: 7.6rem;
+      margin-bottom: 7.55rem;
+      
+
+      .slider__btn {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         z-index: 10;
+   
+         &--prev {
+            left: 0;  
+         }
+   
+         &--next {
+            right: 0;  
+         }
+      }
+
+      .info-button-prev::after,
+      .info-button-next::after {
+         display: none;
+      }
+ 
+   }
+
+   .slider {
+      width: 80rem;      
+      margin: 0 auto;    
+      overflow: hidden;
+   } 
+
+   .schedule-fitness-wrapper {
+      
+      display: flex;
+      flex-direction: column;
+      gap: 6.4rem;
+
+      .schedule-fitness-wrapper-item {
+         display: flex;
+         flex-direction: column;
+         gap: 6.4rem;
+      }
+   }
+
+
+   &__svgs-wrapper {
+      margin-top: 3.4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
    }
     
 }

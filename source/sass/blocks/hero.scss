@@ -260,7 +260,7 @@
    }
 
    &__place-text {
-      font-family: Mossport;
+      font-family: $mossport;
       font-size: 3.5rem;
       font-weight: 400;
       line-height: 101%;
@@ -270,7 +270,7 @@
    }
 
    &__place-title {
-      font-family: Mossport;
+      font-family: $mossport;
       font-size: 7.5rem;
       font-weight: 400;
       line-height: 101%;

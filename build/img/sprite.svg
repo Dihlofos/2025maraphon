@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-left" viewBox="0 0 40 40">
+  <path d="M0 40L40 40L40 0L3.49691e-06 -3.49691e-06L0 40Z" fill="#000102"/>
+  <path d="M31.8633 8.13684L19.9999 20.0002L31.8633 31.8635L19.9999 31.8635L8.1366 20.0002L19.9999 8.13684L31.8633 8.13684Z" fill="#B4CF52"/>
+</symbol><symbol id="arrow-right" viewBox="0 0 40 40">
+  <path d="M40 0L0 0L0 40L40 40L40 0Z" fill="#000102"/>
+  <path d="M8.13672 31.8632L20.0001 19.9998L8.13672 8.13647L20.0001 8.13647L31.8634 19.9998L20.0001 31.8632H8.13672Z" fill="#B4CF52"/>
+</symbol></svg>

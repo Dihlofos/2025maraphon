@@ -1,15 +1,3 @@
-// "use strict";
-
-// (function () {
-//       const testBtn = document.querySelector('#test-btn');
-
-// testBtn.addEventListener('click', () => {
-//    console.log('click');
-// })
-
-//  })();
-
-
 "use strict";
 (function () {
   const stagebuttons = document.querySelectorAll('.stage-btn');
