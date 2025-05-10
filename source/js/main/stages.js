@@ -1,4 +1,5 @@
 "use strict";
+console.log('stage.js is loaded');
 (function () {
   const stagebuttons = document.querySelectorAll('.stage-btn');
   const stageContents = document.querySelectorAll('.stage-content');
@@ -17,5 +18,7 @@
       const targetContent = document.querySelector(`.stage-content--${target}`);
       if (targetContent) targetContent.classList.add('active');
     });
+
   });
 })();
+
