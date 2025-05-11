@@ -1,0 +1,277 @@
+.special-projects {
+   background-color: $black;
+   padding-top: 0;
+
+
+   .top-pseudo-container {
+      position: relative;
+
+      .pseudo-arrows {
+         position: absolute;
+         top: 0;
+         right: 3rem;
+      }
+   }
+
+   // Header
+  
+   .header {
+      background-color: $white;
+      margin-block: 7.2rem 11rem;
+
+
+      &__nav-item {
+         color: $black;
+      }
+
+      &__nav-item-btn {
+         background-color: transparent;
+         color: $black;
+         border: 2px solid $green;
+      }
+   }
+
+   // Special section
+
+   .special-section {
+      &__header {
+         max-width: 88.2rem;
+         margin-bottom: 9rem;
+      }
+   }
+
+   &__title {
+      color: $bgcolor;
+      margin-bottom: 7rem;
+   }
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   &__text p {
+      color: $white;
+   }
+
+   &__text span {
+      color: $bgcolor;
+   }
+
+   .calendar-container {
+
+      &__title-wrapper {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         gap: 2.6rem;
+      }
+
+      &__title {
+         color: $white;
+      }
+
+      &__list {
+         margin-block: 8.7rem 10.97rem;
+         display: flex;
+         flex-direction: column;
+         gap: 4.85rem;
+      }
+
+      &__item {
+         padding: 3.8rem 4.8rem 4.1rem 4rem;
+         clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
+         display: flex;
+         flex-direction: row;
+         gap: 4rem;
+      }
+
+      &__item--registration {
+         background-color: $bgcolor; 
+
+         .status-upcoming {
+            display: none;
+         }
+
+         .status-past {
+            display: none;
+         }
+
+         .past-event {
+            display: none;
+         }
+
+         .upcoming-event {
+            display: none;
+         }
+      }
+
+      &__item--upcoming {
+         background-color: $grey; 
+
+         .status-registration {
+            display: none;
+         }
+
+         .status-past {
+            display: none;
+         }
+
+         .past-event {
+            display: none;
+         }
+
+         .registration-link {
+            display: none;
+         }
+      }
+
+      &__item--past {
+         background-color: $bgcolor; 
+
+         .status-registration {
+            display: none;
+         }
+
+         .status-upcoming {
+            display: none;
+         }
+
+         .registration-link {
+            display: none;
+         }
+
+         .upcoming-event {
+            display: none;
+         }
+      }
+
+      &__image-wrapper {
+         width: 32rem;
+         height: 22.6rem;
+         clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
+         
+      }
+
+      &__content {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+
+      .top-side {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+      }
+
+      .places-list {
+         display: flex;
+         flex-direction: column;
+         gap: 1.3rem;
+      }
+
+      .places-item {
+         display: flex;
+         flex-direction: row;
+         gap: 0.8rem;
+      }
+
+      .places-item-text {
+         color: $white;
+         font-family: $mossport;
+         font-size: 3.5rem;
+         font-weight: 400;
+         line-height: 101%; /* 35.35px */
+         text-transform: uppercase;
+      }
+
+      .status-registration {
+         border-radius: 30px;
+         background: $green;
+         border: none;
+         padding: 1rem;
+         width: fit-content;
+         color: $white;
+         font-family: $myriad;
+         font-size: 1.5rem;
+         font-weight: 400;
+         line-height: normal;
+      }
+
+      .status-upcoming {
+         border-radius: 30px;
+         background: $white;
+         border: none;
+         padding: 1rem;
+         width: fit-content;
+         color: $black-100;
+         font-family: $myriad;
+         font-size: 1.5rem;
+         font-weight: 400;
+         line-height: normal;
+      }
+
+      .bottom-side {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: end;
+         gap: 3rem;
+      }
+
+      .event-desc {
+         color: $black-100;
+         font-family: $mossport;
+         font-size: 4.5rem;
+         font-weight: 400;
+         line-height: 101%; /* 45.45px */
+         text-transform: uppercase;
+      }
+
+      .registration-link {
+         padding: 0.3rem 1rem;
+         background-color: $white;
+         color: $black;
+         font-family: $myriad;
+         font-size: 2.5rem;
+         font-weight: 400;
+         line-height: normal;
+         text-decoration: none;
+      }
+
+      .past-event {
+         padding: 0.3rem 1rem;
+         background-color: $red;
+         color: $white;
+         font-family: $myriad;
+         font-size: 2.5rem;
+         font-weight: 400;
+         line-height: normal;
+         text-decoration: none;
+         width: 26.3rem;
+      }
+   }
+
+   .specials-footer {
+      padding-bottom: 9.7rem;
+   }
+
+   .footer-top,
+   .footer-bottom {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      justify-content: space-between;
+   }
+
+   .footer-text {
+      color: $white;
+   }
+
+   .footer-bottom {
+      margin-top: 3.6rem;
+   }
+}

@@ -136,21 +136,24 @@
             0% 100%
           );
       }
-   }
 
-   .text-medium {
-      font-family: $mossport;
-      font-size: 10rem;
-      line-height: 100%;
-      // margin-bottom: -2rem;
-      margin-left: 1.45rem;
-
-      @media (max-width: $tablet) {
-         font-size: 7.5rem;
-         margin-left: 1rem;
-         // margin-bottom: -1.7rem;
+      .text-medium {
+         font-family: $mossport;
+         font-size: 10rem;
+         line-height: 100%;
+         color: $white;
+         // margin-bottom: -2rem;
+         margin-left: 1.45rem;
+   
+         @media (max-width: $tablet) {
+            font-size: 7.5rem;
+            margin-left: 1rem;
+            // margin-bottom: -1.7rem;
+         }
       }
    }
+
+   
 
    // Portal
 
@@ -202,7 +205,7 @@
       font-family: $mossport;
       font-size: 17.4rem;
       // font-size: clamp(2rem, 10vw, 17.4rem);
-
+      color: $white;
       line-height: 100%;
       display: inline-block;
       width: 100%;
@@ -301,9 +304,9 @@
    }
 
    &__content-text {
-      font-family: $myriad;
-      font-size: 2.5rem;
-      font-weight: 400; 
+      // font-family: $myriad;
+      // font-size: 2.5rem;
+      // font-weight: 400; 
       color: $white;     
    }
 
@@ -361,7 +364,7 @@
    }
 
    &__content-link-wrapper-text {
-      font-family: Mossport;
+      font-family: $mossport;
       font-size: 2.5rem;
       font-weight: 400;
       line-height: normal;
@@ -374,9 +377,10 @@
    }
 
    &__content-link-wrapper-bottom a {
-      font-family: "Myriad Pro";
+      font-family: $myriad;
       font-size: 1.5rem;
       font-weight: 400;
+      color: $black;
    }
 
 }

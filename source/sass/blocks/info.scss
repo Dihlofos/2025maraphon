@@ -32,11 +32,6 @@
    }
 
    &__title {
-      font-family: $mossport;
-      font-size: 6rem;
-      font-weight: 400;
-      line-height: 101%; 
-      text-transform: uppercase;
       color: $green;
    }
 
@@ -91,10 +86,6 @@
 
    &__text {
       margin-top: 5.4rem;
-      font-family: $myriad;
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: normal;
       max-width: 84.4rem;
       color: $black;
    }
