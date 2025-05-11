@@ -133,6 +133,7 @@
       background-color: $white;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       gap: 1.3rem;
    }
 
@@ -271,6 +272,22 @@
       overflow: hidden;
    } 
 
+   .fitness__slider-item {
+      cursor: pointer;
+   }
+
+   .fitness__slider-item .fitness-logo-active {
+      display: none;
+   }
+   
+   .fitness__slider-item.active .fitness-logo-active {
+      display: block;
+   }
+   
+   .fitness__slider-item.active img:first-child {
+      display: none;
+   }
+    
    .schedule-fitness-wrapper {
       
       display: flex;

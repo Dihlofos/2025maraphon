@@ -1,5 +1,4 @@
 "use strict";
-console.log('stage.js is loaded');
 (function () {
   const stagebuttons = document.querySelectorAll('.stage-btn');
   const stageContents = document.querySelectorAll('.stage-content');
