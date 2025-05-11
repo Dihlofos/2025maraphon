@@ -116,6 +116,20 @@
       sliderItems[0].click();
    }
 
+   document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll(".fitness__slider-item");
+      const prevButton = document.querySelector(".fitness-button-prev");
+      const nextButton = document.querySelector(".fitness-button-next");
+    
+      const isDesktop = window.innerWidth >= 1024;
+    
+      if (isDesktop && slides.length < 4) {
+         prevButton.style.display = "none";
+         nextButton.style.display = "none";
+      } 
+    });
+    
+
 })();
 
 
