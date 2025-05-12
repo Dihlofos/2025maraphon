@@ -47,6 +47,99 @@
       }
    }
 
+   .map-container {
+      padding: 4.6rem;
+      background-color: $white;
+      clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
+      display: flex;
+      flex-direction: row;
+      gap: 3.4rem;
+      margin-bottom: 7.45rem;
+
+      .map-visual-wrapper {
+         width: 59.8rem;
+         height: 58.2rem;
+         position: relative;
+
+         img {
+            z-index: 1;
+         }
+
+         .map-vector {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+         }
+
+         #locations {
+            path[data-index] {
+               fill: rgba(112, 180, 45, 0.50);
+               transition: fill 0.3s, opacity 0.3s;
+
+               &.hovered {
+                  fill: $black;
+                  opacity: 0.5;
+                }
+            }
+         }
+
+         .locations-info {
+
+            circle {
+               fill: $black;
+            }
+
+            path {
+               fill: $bgcolor;
+            }
+
+            &.hovered {
+               circle {
+                 fill: $bgcolor;
+               }
+         
+               path {
+                 fill: $black;
+               }
+             }
+         }
+      }
+
+      .map-places-list {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+
+      .map-places-item{
+         display: flex;
+         flex-direction: row;
+         gap: 2rem;
+      }
+
+      .map-places-number {
+         width: 3.9rem;
+         height: 3.9rem;
+         border-radius: 50%;
+         background-color: $bgcolor;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .map-places-text {
+         color: $black;
+         font-family: $mossport;
+         font-size: 3.5rem;
+         font-weight: 400;
+         line-height: 101%; /* 35.35px */
+         text-transform: uppercase;
+      }
+   }
+
    &__svgs-wrapper {
       display: flex;
       flex-direction: row;
