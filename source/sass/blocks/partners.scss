@@ -2,6 +2,14 @@
    padding-block: 14.5rem 7.1rem;
    background-color: $white;
 
+   @media (max-width: $tablet) {
+      padding-block: 9rem 7.1rem;
+    }
+
+   @media (max-width: $mobile) {
+      padding-block: 4rem 7.1rem;
+    }
+
    .partners-header {
       display: flex;
       flex-direction: row;
@@ -11,12 +19,35 @@
 
    &__title {
       color: $green;
+
+      @media (max-width: $laptop) {
+         max-width: 40rem;
+       }
    }
 
    .partners-header-svgs {
       display: flex;
       flex-direction: row;
       gap: 1.35rem;
+
+      @media (max-width: $tablet) {
+         flex-direction: column;
+         gap: 2.24rem;
+       }
+
+      .six-crosses {
+         @media (max-width: $tablet) {
+            display: none;
+          }
+      }
+
+      .three-crosses {
+         display: none;
+         @media (max-width: $tablet) {
+            display: block;
+            
+          }
+      }
    }
 
    &__list-wrapper {
@@ -24,6 +55,11 @@
       justify-content: center;
       align-items: center;
       margin-block: 12.1rem 7.9rem;
+
+      @media (max-width: $tablet) {
+         margin-block: 4.3rem 7.9rem;
+
+      }
    }
 
    &__list {
@@ -31,11 +67,31 @@
       grid-template-columns: 1fr 1fr 1fr;
       row-gap: 5.66rem;
       column-gap: 7rem;
+
+      @media (max-width: $tablet) {
+         row-gap: 2.57rem;
+         // column-gap: 3.8rem;
+         width: 100%;
+         column-gap: unset; // лишнее
+         justify-items: stretch; 
+      }
+
    }
 
    &__item {
       width: auto;
       height: 6.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__dots-image {
+      img {
+         @media (max-width: $mobile) {
+            width: 16.4rem;
+         }
+      }
    }
 }
 

@@ -108,6 +108,7 @@ gulp.task("vendor", function () {
 gulp.task("server", function () {
   server.init({
     server: "build/",
+    port: 3001, 
     notify: false,
     open: true,
     cors: true,

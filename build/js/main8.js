@@ -15,7 +15,7 @@
 
 "use strict";
 (function () {
-   const swiper = new Swiper(".js-concert-swiper-container", {
+   const concertSwiper = new Swiper(".js-concert-swiper-container", {
       slidesPerView: 4,
       spaceBetween: 40,
       navigation: {
@@ -23,11 +23,15 @@
         prevEl: ".concert-button-prev",
       },
       breakpoints: {
+         1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+         },
         768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
+         slidesPerView: 2,
+         spaceBetween: 40,
         },
-        480: {
+        0: {
           slidesPerView: 1,
           spaceBetween: 20,
         },
@@ -72,25 +76,60 @@
 
 "use strict";
 (function () {
-   const swiper = new Swiper(".js-fitness-swiper-container", {
+   const fitnessSwiper = new Swiper(".js-fitness-swiper-container", {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 20,
       allowTouchMove: false, 
+      centeredSlides: false,
       navigation: {
         nextEl: ".fitness-button-next",
         prevEl: ".fitness-button-prev",
       },
       breakpoints: {
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        480: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
+         
+         
+         1280: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: true,
+          },
+        
+        
       },
     });
+
+   // const fitnessSwiper = new Swiper(".js-fitness-swiper-container", {
+   //    // Базово — 1 слайд
+   //    slidesPerView: 1,
+   //    spaceBetween: 20,          // отступ между слайдами и от кнопок ≤ 20px
+   //    allowTouchMove: false,     // свайп отключён
+   //    centeredSlides: true,     // без центрирования
+   //    navigation: {
+   //      nextEl: ".fitness-button-next",
+   //      prevEl: ".fitness-button-prev",
+   //    },
+   //    breakpoints: {
+   //      // от 1024 до 1279px — 2 слайда
+   //      1024: {
+   //        slidesPerView: 2,
+   //        spaceBetween: 20
+   //      },
+   //      // от 1280px и выше — 3 слайда
+   //      1280: {
+   //        slidesPerView: 3,
+   //        spaceBetween: 20
+   //      }
+   //    }
+   //  });
+    
 
    const sliderItems = document.querySelectorAll(".fitness__slider-item");
    const scheduleWrappers = document.querySelectorAll(".schedule-fitness-wrapper");
@@ -132,32 +171,49 @@
 
 })();
 
-
- 
 "use strict";
 (function () {
-   const swiper = new Swiper(".js-info-swiper-container", {
+   const zonesSwiper = new Swiper(".js-zones-swiper-container", {
       slidesPerView: 3,
       spaceBetween: 40,
+      navigation: {
+        nextEl: ".zone-button-next",
+        prevEl: ".zone-button-prev",
+      },
+      breakpoints: {
+         1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+         },
+         768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+         },
+         0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+         },
+      },
+    });
+    
+    const infoSwiper = new Swiper(".js-info-swiper-container", {
+      slidesPerView: 'auto',
+      spaceBetween: 40,
+      slidesPerGroup: 1,
       navigation: {
         nextEl: ".info-button-next",
         prevEl: ".info-button-prev",
       },
       breakpoints: {
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        480: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
+        768: { spaceBetween: 30 },
+        480: { spaceBetween: 20 },
       },
     });
+    
    
    
    function equalizeSlideHeights() {
-      const slides = document.querySelectorAll('.slider__item');
+      const slides = document.querySelectorAll('.zone-slider-item');
       let maxHeight = 0;
    
       slides.forEach(slide => {
@@ -624,34 +680,34 @@
 
 })();
 
-// "use strict";
-// (function () {
-//   const nav = document.querySelector('.js-nav');
-//   const toggler = nav.querySelector('.js-nav-toggler');
-//   const closeButton = nav.querySelector('.js-nav-close');
-//   const links = nav.querySelectorAll('.js-scroll');
+"use strict";
+(function () {
+  const nav = document.querySelector('.js-nav');
+  const toggler = nav.querySelector('.js-nav-toggler');
+  const closeButton = nav.querySelector('.js-nav-close');
+  const links = nav.querySelectorAll('.js-scroll');
 
-//   toggler.addEventListener('click', () => {
-//     nav.classList.toggle('is-active');
-//   })
+  toggler.addEventListener('click', () => {
+    nav.classList.toggle('is-active');
+  })
 
-//   closeButton.addEventListener('click', () => {
-//     closeNav();
-//   })
+  closeButton.addEventListener('click', () => {
+    closeNav();
+  })
 
-//   links.forEach((link) => {
-//     link.addEventListener('click', () => {
-//       closeNav();
-//     })
-//   })
-
-
-//   function closeNav() {
-//     nav.classList.remove('is-active');
-//   }
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      closeNav();
+    })
+  })
 
 
-// })();
+  function closeNav() {
+    nav.classList.remove('is-active');
+  }
+
+
+})();
 
 // "use strict";
 // (function () {

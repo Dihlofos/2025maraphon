@@ -15,16 +15,55 @@
    <div itemscope style="overflow: hidden">
       <main style="overflow: hidden">
 
+        <nav class="nav nav--mobile js-nav">
+         <button class="nav__mobile-toggler js-nav-toggler">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+               <rect width="26" height="2" fill="#000102"/>
+               <rect y="10" width="26" height="2" fill="#000102"/>
+               <rect y="20" width="26" height="2" fill="#000102"/>
+             </svg>
+         </button>
+         <div class="nav__wrapper">
+           <button class="nav__close js-nav-close ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+               <g clip-path="url(#clip0_174_1772)">
+                 <path d="M7.7987 35L17.5 25.2987L27.2013 35L35 27.2013L25.2996 17.5L35 7.7987L27.2013 0L17.5 9.7013L7.7987 0L0 7.7987L9.7013 17.5L0 27.2013L7.7987 35Z" fill="white"/>
+               </g>
+               <defs>
+                 <clipPath id="clip0_174_1772">
+                   <rect width="35" height="35" fill="white"/>
+                 </clipPath>
+               </defs>
+             </svg>
+           </button>
+           <ul class="nav__list">
+            <li><a data-scroll href="#about" class="nav__item js-scroll">О проекте</a></li>
+            <li><a data-scroll href="#schedule" class="nav__item js-scroll" >Расписание</a></li>
+            <li><a data-scroll href="#concert" class="nav__item js-scroll">Концерт</a></li>
+            <li><a data-scroll href="#map" class="nav__item js-scroll">Карта</a></li>
+            <li><a data-scroll href="#faq" class="nav__item js-scroll">Вопросы и ответы</a></li>
+            <li><a data-scroll href="#footer" class="nav__item js-scroll">Контакты</a></li>
+            <li><a href="./special.html" class="nav__item-btn">Спецпроекты</a></li>
+         </ul>
+         <!-- <div class="nav__decor">
+            <img class="nav__decor" src="img/nav/arrows-up.svg" alt="">
+         </div> -->
+           
+         </div>
+       </nav>
+
          <header class="container">
-            <div class="header">
+            <div class="header" id="header">
                <nav class="header__nav">
-                  <a href="#" class="header__nav-item">О проекте</a>
-                  <a href="#" class="header__nav-item">Расписание</a>
-                  <a href="#" class="header__nav-item">Концерт</a>
-                  <a href="#" class="header__nav-item">Карта</a>
-                  <a href="#" class="header__nav-item">Вопросы и ответы</a>
-                  <a href="#" class="header__nav-item">Контакты</a>
-                  <a href="./special.html" class="header__nav-item-btn">Спецпроекты</a>
+                  <ul class="header__nav-list">
+                     <li><a data-scroll href="#about" class="header__nav-item js-scroll">О проекте</a></li>
+                     <li><a data-scroll href="#schedule" class="header__nav-item js-scroll">Расписание</a></li>
+                     <li><a data-scroll href="#concert" class="header__nav-item js-scroll">Концерт</a></li>
+                     <li><a data-scroll href="#map" class="header__nav-item js-scroll">Карта</a></li>
+                     <li><a data-scroll href="#faq" class="header__nav-item js-scroll">Вопросы и ответы</a></li>
+                     <li><a data-scroll href="#footer" class="header__nav-item js-scroll">Контакты</a></li>
+                     <li><a href="./special.html" class="header__nav-item-btn">Спецпроекты</a></li>
+                  </ul>
                </nav>
             </div>
          </header>
@@ -49,7 +88,8 @@
                            <img src="img/logos/pobeda.svg" alt="80 лет победы" class="hero__logo-img logo--pobeda">
                         </a>
                      </div>
-                        <img class="hero__top-arrow" src="img/hero/black-arrow.svg" alt="">
+                     
+                     <img class="hero__top-arrow" src="img/hero/black-arrow.svg" alt="">
                      <div class="cut-corner-bottom">
                         <div class="text-medium">28-29 ИЮНЯ</div>
                      </div>
@@ -70,9 +110,9 @@
       
                   <div class="hero__place">
                      <div class="hero__place-wrapper">
-                        <img src="img/hero/place.svg" alt="Place icon">
+                        <img class="hero__place-icon" src="img/hero/place.svg" alt="Place icon">
                         <div class="hero__place-text">Екатерининский парк, Суворовская площадь, Екатерининский сквер, Самотечный бульвар</div>
-                        <img src="img/hero/many-arrows.svg" alt="Many arrows">
+                        <img class="hero__place-arrows" src="img/hero/many-arrows.svg" alt="Many arrows">
                         <div class="hero__place-title">Бесплатно</div>
                      </div>
                   </div>
@@ -80,11 +120,27 @@
                   <div class="hero__info">
       
                      <div class="hero__svg-decorations">
-                        <img src="img/hero/arrow-top.svg" alt="Arrow top">
-                        <img src="img/hero/dots.svg" alt="Dots">
+                        <img class="svg-decorations-arrow" src="img/hero/arrow-top.svg" alt="Arrow top">
+                        <img class="hero-dots" src="img/hero/dots.svg" alt="Dots">
+                        <div class="hero__svg-decorations-group">
+                           <img src="img/hero/many-arrows.svg" alt="Many arrows">
+                           <div class="svg-decorations-title">Бесплатно</div>
+                        </div>
                      </div>
       
                      <div class="hero__content-wrapper">
+                        <div class="hero__content-link-container-small">
+                           <div class="hero__content-link-wrapper">
+                              <div class="hero__content-link-wrapper-top">
+                                 <div class="hero__content-link-wrapper-text">СПЕЦПРОЕКТЫ</div>
+                              </div>
+                              <div class="hero__content-link-wrapper-bottom">
+                                 <a href="./special.html">Узнать подробнее</a>
+                              </div>
+                           </div>
+
+                           <img src="img/hero/cross.svg" alt="Cross icon">
+                        </div>
                         <div class="hero__content-left">
                            <p class="hero__content-text"><span>Готовы к суперэнергичным выходным этого лета? Тогда присоединяйтесь к Московскому марафону тренировок!</span></p>
                            <p class="hero__content-text"><span>28 и 29 июня</span> Площадь перед театром Российской армии и Екатерининский сквер превратятся в огромные фитнес-площадки: десятки бесплатных тренировок, шоу, музыка, подарки и атмосфера настоящего лета.</p>
@@ -101,7 +157,7 @@
                               <img src="img/hero/yoga.webp" alt="Yoga">
                            </div>
       
-                           <div class="hero__content-link-container">
+                           <div class="hero__content-link-container-big">
                               <img src="img/hero/cross.svg" alt="Cross icon">
                               <div class="hero__content-link-wrapper">
                                  <div class="hero__content-link-wrapper-top">
@@ -113,6 +169,7 @@
                               </div>
                            </div>
                         </div>  
+                        
                      </div>
                   </div>
                </div>
@@ -133,12 +190,47 @@
                   <img src="img/info/crosses.svg" alt="Crosses">
                </div>
 
-               
-
-               <div class="info-wrapper">
+                <div class="info-wrapper" id="about">
                   <div class="info__main-wrapper">
                      <div class="info__title title-medium">Что вас ждет?</div>
-                     <div class="info__list">
+
+                     <div class="slider-wrapper slider-wrapper-info">
+
+                        <div class="buttons-wrapper">
+                           <div class="slider__btn slider__btn--prev info-button-prev">
+                              <img src="img/icons/arrow-left.svg" alt="">
+                           </div>
+                           <div class="slider__btn slider__btn--next info-button-next">
+                              <img src="img/icons/arrow-right.svg" alt="">
+                           </div>
+                        </div>
+
+                       
+
+                        <div class="slider js-info-swiper-container">
+                           
+                           <div class="swiper-wrapper info__list">
+                              
+                              <div class="info__item-wrapper slider__item swiper-slide info__slider-item">
+                                 <div class="info__item-title">Бесплатные тренировки на свежем воздухе</div>
+                                 <div class="info__item-text">Десятки направлений — от сайклинга и зумбы, до капоэйры и MMA. Выбирайте свое!</div>
+                              </div>
+            
+                              <div class="info__item-wrapper slider__item swiper-slide info__slider-item">
+                                 <div class="info__item-title">Любимые звезды и диджеи</div>
+                                 <div class="info__item-text">Тренируйтесь вместе с медийными гостями, спортсменами и артистами. А по вечерам — диджей-сеты и живые выступления.</div>
+                              </div>
+            
+                              <div class="info__item-wrapper slider__item swiper-slide info__slider-item">
+                                 <div class="info__item-title">Спорт, праздник, подарки</div>
+                                 <div class="info__item-text">Браслеты за каждую тренировку и гарантированные призы — от наклеек до гамака. Чем активнее день, тем круче награда!</div>
+                              </div>
+                              
+                           </div>
+
+                        </div>
+                     </div>
+                     <!-- <div class="info__list">
                         <div class="info__item-wrapper">
                            <div class="info__item-title">Бесплатные тренировки на свежем воздухе</div>
                            <div class="info__item-text">Десятки направлений — от сайклинга и зумбы, до капоэйры и MMA. Выбирайте свое!</div>
@@ -153,13 +245,29 @@
                            <div class="info__item-title">Спорт, праздник, подарки</div>
                            <div class="info__item-text">Браслеты за каждую тренировку и гарантированные призы — от наклеек до гамака. Чем активнее день, тем круче награда!</div>
                         </div>
-                     </div>
+                     </div> -->
                   </div>
 
                   <div class="info__svgs-wrapper">
-                     <img src="img/info/green-arrows.svg" alt="Green arrows">
-                     <img src="img/info/dots.svg" alt="Dots">
-                     <img src="img/hero/black-arrow.svg" alt="Black arrow">
+                     <svg class="arrows" viewBox="0 0 324 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M80.9226 81.3985L121.384 41.1739L80.9226 0.959229H121.384L161.845 41.1739L121.384 81.3985H80.9226Z" fill="#70B42D"/>
+                        <path d="M0 81.3985L40.4613 41.1739L0 0.959229H40.4613L80.9227 41.1739L40.4613 81.3985H0Z" fill="#70B42D"/>
+                        <path d="M161.845 81.3985L202.297 41.1739L161.845 0.959229H202.297L242.758 41.1739L202.297 81.3985H161.845Z" fill="#70B42D"/>
+                        <path d="M242.758 81.3985L283.219 41.1739L242.758 0.959229H283.219L323.681 41.1739L283.219 81.3985H242.758Z" fill="#70B42D"/>
+                     </svg>
+                     <svg class="dots" viewBox="0 0 192 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.27504 11.6014C9.37457 11.6014 11.8872 9.1034 11.8872 6.022C11.8872 2.9406 9.37457 0.442627 6.27504 0.442627C3.1755 0.442627 0.662842 2.9406 0.662842 6.022C0.662842 9.1034 3.1755 11.6014 6.27504 11.6014Z" fill="#000102"/>
+                        <path d="M51.1726 11.6014C54.2722 11.6014 56.7848 9.1034 56.7848 6.022C56.7848 2.9406 54.2722 0.442627 51.1726 0.442627C48.0731 0.442627 45.5604 2.9406 45.5604 6.022C45.5604 9.1034 48.0731 11.6014 51.1726 11.6014Z" fill="#000102"/>
+                        <path d="M96.0617 11.6014C99.1612 11.6014 101.674 9.1034 101.674 6.022C101.674 2.9406 99.1612 0.442627 96.0617 0.442627C92.9621 0.442627 90.4495 2.9406 90.4495 6.022C90.4495 9.1034 92.9621 11.6014 96.0617 11.6014Z" fill="#000102"/>
+                        <path d="M140.959 11.6014C144.059 11.6014 146.571 9.1034 146.571 6.022C146.571 2.9406 144.059 0.442627 140.959 0.442627C137.86 0.442627 135.347 2.9406 135.347 6.022C135.347 9.1034 137.86 11.6014 140.959 11.6014Z" fill="#000102"/>
+                        <path d="M185.848 11.6014C188.948 11.6014 191.46 9.1034 191.46 6.022C191.46 2.9406 188.948 0.442627 185.848 0.442627C182.749 0.442627 180.236 2.9406 180.236 6.022C180.236 9.1034 182.749 11.6014 185.848 11.6014Z" fill="#000102"/>
+                        <path d="M6.27504 56.2361C9.37457 56.2361 11.8872 53.7382 11.8872 50.6568C11.8872 47.5754 9.37457 45.0774 6.27504 45.0774C3.1755 45.0774 0.662842 47.5754 0.662842 50.6568C0.662842 53.7382 3.1755 56.2361 6.27504 56.2361Z" fill="#000102"/>
+                        <path d="M51.1727 56.2361C54.2723 56.2361 56.785 53.7382 56.785 50.6568C56.785 47.5754 54.2723 45.0774 51.1727 45.0774C48.0732 45.0774 45.5605 47.5754 45.5605 50.6568C45.5605 53.7382 48.0732 56.2361 51.1727 56.2361Z" fill="#000102"/>
+                        <path d="M96.0617 56.2361C99.1612 56.2361 101.674 53.7382 101.674 50.6568C101.674 47.5754 99.1612 45.0774 96.0617 45.0774C92.9621 45.0774 90.4495 47.5754 90.4495 50.6568C90.4495 53.7382 92.9621 56.2361 96.0617 56.2361Z" fill="#000102"/>
+                        <path d="M140.959 56.2361C144.059 56.2361 146.571 53.7382 146.571 50.6568C146.571 47.5754 144.059 45.0774 140.959 45.0774C137.86 45.0774 135.347 47.5754 135.347 50.6568C135.347 53.7382 137.86 56.2361 140.959 56.2361Z" fill="#000102"/>
+                        <path d="M185.848 56.2361C188.948 56.2361 191.46 53.7382 191.46 50.6568C191.46 47.5754 188.948 45.0774 185.848 45.0774C182.749 45.0774 180.236 47.5754 180.236 50.6568C180.236 53.7382 182.749 56.2361 185.848 56.2361Z" fill="#000102"/>
+                     </svg>
+                     <img class="black-arrow" src="img/hero/black-arrow.svg" alt="Black arrow">
                   </div>
 
                   <div class="info__content">
@@ -167,28 +275,30 @@
                      <p class="info__text">Спорт — это целый мир активностей на любой вкус. Вас ждут тематические зоны, где можно попробовать новое, бросить себе вызов, отдохнуть и зарядиться.</p>
                   </div>
                </div>
+
+              
             </div>
 
-            <div class="slider-main-wrapper">
+            <div class="slider-main-wrapper-zones">
                <div class="big-green-arrows-pseudo">
                   <img src="img/info/green-arrows-big.svg" alt="Big arrows">
                </div>
 
-               <div class="slider-wrapper">
+               <div class="slider-wrapper slider-wrapper-zones">
 
-                  <div class="slider__btn slider__btn--prev info-button-prev">
+                  <div class="slider__btn slider__btn--prev zone-button-prev">
                      <img src="img/icons/arrow-left.svg" alt="">
                   </div>
-                  <div class="slider__btn slider__btn--next info-button-next">
+                  <div class="slider__btn slider__btn--next zone-button-next">
                      <img src="img/icons/arrow-right.svg" alt="">
                   </div>
-                  <div class="slider js-info-swiper-container">
+                  <div class="slider js-zones-swiper-container">
                      
                      <div class="swiper-wrapper">
-                        <div class="slider__item swiper-slide info__slider-item">
-                           <div class="info__slider-item-title">Территория силы</div>
-                           <div class="info__slider-item-content">Зона для тех, кто выбирает брутальность, выносливость и честную конкуренцию.</div>
-                           <ul class="info__slider-item-list">
+                        <div class="slider__item-zone swiper-slide zone-slider-item">
+                           <div class="zone-slider-item-title">Территория силы</div>
+                           <div class="zone-slider-item-content">Зона для тех, кто выбирает брутальность, выносливость и честную конкуренцию.</div>
+                           <ul class="zone-slider-item-list">
                               <li>Армрестлинг</li>
                               <li>Воркаут</li>
                               <li>Фехтование на световых мечах</li>
@@ -197,10 +307,10 @@
                            </ul>
                         </div>
 
-                        <div class="slider__item swiper-slide info__slider-item">
-                           <div class="info__slider-item-title">Сила женственности</div>
-                           <div class="info__slider-item-content">Пространство женских практик, мягкой силы и заботы о теле.</div>
-                           <ul class="info__slider-item-list">
+                        <div class="slider__item swiper-slide zone-slider-item">
+                           <div class="zone-slider-item-title">Сила женственности</div>
+                           <div class="zone-slider-item-content">Пространство женских практик, мягкой силы и заботы о теле.</div>
+                           <ul class="zone-slider-item-list">
                               <li>Диагностика состояния тела</li>
                               <li>Пилатес</li>
                               <li>Иммерсивный фитнес в наушниках</li>
@@ -209,10 +319,10 @@
                            </ul>
                         </div>
 
-                        <div class="slider__item swiper-slide info__slider-item">
-                           <div class="info__slider-item-title">Энергия детства</div>
-                           <div class="info__slider-item-content">Зона для самых маленьких участников с веселыми и развивающими активностями.</div>
-                           <ul class="info__slider-item-list">
+                        <div class="slider__item swiper-slide zone-slider-item">
+                           <div class="zone-slider-item-title">Энергия детства</div>
+                           <div class="zone-slider-item-content">Зона для самых маленьких участников с веселыми и развивающими активностями.</div>
+                           <ul class="zone-slider-item-list">
                               <li>Армрестлинг</li>
                               <li>Воркаут</li>
                               <li>Фехтование на световых мечах</li>
@@ -221,10 +331,10 @@
                            </ul>
                         </div>
 
-                        <div class="slider__item swiper-slide info__slider-item">
-                           <div class="info__slider-item-title">Энергия детства</div>
-                           <div class="info__slider-item-content">Зона для самых маленьких участников с веселыми и развивающими активностями.</div>
-                           <ul class="info__slider-item-list">
+                        <div class="slider__item swiper-slide zone-slider-item">
+                           <div class="zone-slider-item-title">Энергия детства</div>
+                           <div class="zone-slider-item-content">Зона для самых маленьких участников с веселыми и развивающими активностями.</div>
+                           <ul class="zone-slider-item-list">
                               <li>Запуск воздушных змеев</li>
                               <li>Сухой бассейн и аквагрим</li>
                               <li>Паровозик</li>
@@ -233,10 +343,10 @@
                            </ul>
                         </div>
 
-                        <div class="slider__item swiper-slide info__slider-item">
-                           <div class="info__slider-item-title">Объединяйся!</div>
-                           <div class="info__slider-item-content">Семейная зона, где спорт объединяет поколения.</div>
-                           <ul class="info__slider-item-list">
+                        <div class="slider__item swiper-slide zone-slider-item">
+                           <div class="zone-slider-item-title">Объединяйся!</div>
+                           <div class="zone-slider-item-content">Семейная зона, где спорт объединяет поколения.</div>
+                           <ul class="zone-slider-item-list">
                               <li>Забеги с колясками</li>
                               <li>Городские виды спорта</li>
                               <li>Интерактивные арт-объекты</li>
@@ -245,14 +355,14 @@
                            </ul>
                         </div>
 
-                        <div class="slider__item swiper-slide info__slider-item">
-                           <div class="info__slider-item-title">Суперниндзя</div>
-                           <div class="info__slider-item-content">Испытайте себя — пройдите настоящую полосу препятствий в стиле популярного телешоу</div>
+                        <div class="slider__item swiper-slide zone-slider-item">
+                           <div class="zone-slider-item-title">Суперниндзя</div>
+                           <div class="zone-slider-item-content">Испытайте себя — пройдите настоящую полосу препятствий в стиле популярного телешоу</div>
                         </div>
 
-                        <div class="slider__item swiper-slide info__slider-item">
-                           <div class="info__slider-item-title">Зона отдыха и арт-перфомансов</div>
-                           <div class="info__slider-item-content">Нужно передохнуть между тренировками? Добро пожаловать в пространство релакса и вдохновения. Здесь можно восстановить силы, сделать яркие фото и просто насладиться атмосферой лета.</div>
+                        <div class="slider__item swiper-slide zone-slider-item">
+                           <div class="zone-slider-item-title">Зона отдыха и арт-перфомансов</div>
+                           <div class="zone-slider-item-content">Нужно передохнуть между тренировками? Добро пожаловать в пространство релакса и вдохновения. Здесь можно восстановить силы, сделать яркие фото и просто насладиться атмосферой лета.</div>
                         </div>
                         
                      </div>
@@ -295,10 +405,7 @@
                   </div>
 
 
-                  <div class="stage-switcher stage-container">
-                     <!-- <div class="arrow-down-pseudo">
-                        <img src="img/schedule/arrow-down.svg" alt="Arrow-down" >
-                     </div> -->
+                  <div class="stage-switcher stage-container" id="schedule">
 
                      <div class="stage-switcher__buttons">
                         <button class="stage-btn active" data-stage="main">Основная сцена</button>
@@ -513,7 +620,7 @@
                   </div>
                    
                   <div class="schedule__dots-wrapper">
-                     <img src="img/hero/dots.svg" alt="Dots">
+                     <img class="dots-icon" src="img/hero/dots.svg" alt="Dots">
 
                      <div class="arrow-down-pseudo">
                         <img src="img/schedule/arrow-down.svg" alt="Arrow-down" >
@@ -522,7 +629,8 @@
 
                   <div class="schedule__title-medium title-medium">Тренировки от фитнес-клубов</div>
 
-                  <div class="schedule__text">Приготовьтесь к драйву на максимальной громкости! Вас ждет джампинг, зумба, ММА, сайклинг, пилатес и танцевальные миксы под сеты диджеев и лайвы артистов.
+                  <div class="schedule__text-wrapper">
+                     <div class="schedule__text">Приготовьтесь к драйву на максимальной громкости! Вас ждет джампинг, зумба, ММА, сайклинг, пилатес и танцевальные миксы под сеты диджеев и лайвы артистов.</div>
                      <div class="arrows-green-big-pseudo">
                         <img src="img/schedule/green-arrows-big.svg" alt="green-arrows" >
                      </div>
@@ -534,14 +642,23 @@
 
                      <div class="slider-fitness-main-wrapper">
                         <div class="slider-fitness-wrapper">
+
                            <div class="slider__btn slider__btn--prev fitness-button-prev">
-                              <img src="img/schedule/arrow-prev.svg" alt="">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 77" fill="none">
+                                 <path d="M7.62939e-06 76.5L76 76.5L76 0.5L1.42735e-05 0.499993L7.62939e-06 76.5Z" fill="white"/>
+                                 <path d="M60.5375 15.9562L37.9968 38.4969L60.5375 61.0376L37.9968 61.0376L15.4562 38.4969L37.9968 15.9562L60.5375 15.9562Z" fill="#B4CF50"/>
+                               </svg>
                            </div>
                            <div class="slider__btn slider__btn--next fitness-button-next">
-                              <img src="img/schedule/arrow-next.svg" alt="">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 77" fill="none">
+                                 <path d="M76 0.5L0 0.5L0 76.5L76 76.5L76 0.5Z" fill="white"/>
+                                 <path d="M15.4624 61.0438L38.0031 38.5031L15.4624 15.9624L38.0031 15.9624L60.5437 38.5031L38.0031 61.0438H15.4624Z" fill="#B4CF50"/>
+                               </svg>
                            </div>
+                          
                            
                            <div class="slider js-fitness-swiper-container">
+                              
                               
                               <div class="swiper-wrapper">
                                  <div class="slider__item swiper-slide fitness__slider-item" data-id="world-class">
@@ -774,8 +891,8 @@
                   </div>
 
                   <div class="schedule__svgs-wrapper">
-                     <img src="img/schedule/green-cross-half.svg" alt="Green cross">
-                     <img src="img/hero/dots.svg" alt="Dots">
+                     <img class="green-cross" src="img/schedule/green-cross-half.svg" alt="Green cross">
+                     <img class="dots" src="img/hero/dots.svg" alt="Dots">
                   </div>
             </div>
          </section>
@@ -786,10 +903,10 @@
             <div class="container concert-container">
                <div class="pseudo-top">
                   <img class="pseudo-top-crosses" src="img/concerts/crosses.svg" alt="Crosses">
-                  <img src="img/concerts/arrows-down.svg" alt="Arrows-down">
+                  <img class="arrows" src="img/concerts/arrows-down.svg" alt="Arrows-down">
                </div>
                   
-                  <div class="concert-wrapper">
+                  <div class="concert-wrapper" id="concert">
                      <div class="concert__title title-big">КОНЦЕРТ</div>
                      <p class="concert__text">Заряжайтесь энергией под живые выступления артистов и диджей-сеты на закате. Каждая тренировка — маленький open-air. (в проработке Ани Лорак, Дискотека Авария, Полина Гагарина, Artic&Asti Севиль)</p>
                   </div>
@@ -865,12 +982,13 @@
             </div>
 
 
-            <div class="container">
+            <div class="container svg-bottom-container">
                <div class="concert__svg-bottom">
-                  <img src="img/hero/dots.svg" alt="Dots">
+                  <img class="dots" src="img/hero/dots.svg" alt="Dots">
                   <div class="big-green-arrow-pseudo">
                      <img src="img/concerts/big-arrow-down.svg" alt="Big arrow down">
                   </div>
+                  <img class="crosses" src="img/concerts/crosses.svg" alt="Crosses">
                </div>
 
             </div>
@@ -883,16 +1001,16 @@
                <div class="map-wrapper">
                   <div class="map-header">
                      <div class="map-header__title title-big">Карта</div>
-                     <img src="img/map/arrows-small.svg" alt="Arrows small">
+                     <img class="arrows" src="img/map/arrows-small.svg" alt="Arrows small">
                      <div class="map-header__place">
                         <div class="map-header__place-wrapper">
-                           <img src="img/hero/place.svg" alt="Place icon">
+                           <img class="map-header__place-icon" src="img/hero/place.svg" alt="Place icon">
                            <div class="map-header__place-text">Екатерининский парк, Суворовская площадь, Екатерининский сквер, Самотечный бульвар</div>
                         </div>
                      </div>
                   </div>
 
-                  <div class="map-container">
+                  <div class="map-container" id="map">
                      <div class="map-visual-wrapper">
                         <img src="img/map/map.png" alt="Map">
 
@@ -1011,10 +1129,36 @@
                   </div>
 
                   <div class="map__svgs-wrapper">
-                     <img src="img/map/big-black-arrow.svg" alt="Big arrow">
-                     <img src="img/map/black-arrows.svg" alt="Arrows">
-                     <img src="img/map/dots.svg" alt="Dots">
-                     <img src="img/map/crosses.svg" alt="Crosses">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="149" height="150" viewBox="0 0 149 150" fill="none">
+                        <path d="M27.4141 0.410156V102.411L129.103 0.765439L148.491 20.1457L46.8024 121.792H148.847V149.194H27.4141H-0.000259399V121.792V0.410156H27.4141Z" fill="#000102"/>
+                      </svg>
+                      <svg width="301" height="151" viewBox="0 0 301 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M150.754 0L225.877 75.1027L150.754 150.194H225.877L301 75.1027L225.877 0H150.754Z" fill="#000102"/>
+                        <path d="M0.496964 0L75.6199 75.1027L0.496964 150.194H75.6199L150.754 75.1027L75.6199 0H0.496964Z" fill="#000102"/>
+                        </svg>
+                        <svg width="300" height="71" viewBox="0 0 300 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M14.2905 7.10195C14.2905 11.0254 11.0926 14.204 7.14525 14.204C3.19788 14.204 0 11.0254 0 7.10195C0 3.17848 3.19788 0 7.14525 0C11.0926 0 14.2905 3.17848 14.2905 7.10195Z" fill="white"/>
+                           <path d="M64.2971 14.204C68.2433 14.204 71.4423 11.0243 71.4423 7.10195C71.4423 3.17963 68.2433 0 64.2971 0C60.3509 0 57.1519 3.17963 57.1519 7.10195C57.1519 11.0243 60.3509 14.204 64.2971 14.204Z" fill="white"/>
+                           <path d="M128.574 7.10195C128.574 11.0254 125.377 14.204 121.429 14.204C117.482 14.204 114.284 11.0254 114.284 7.10195C114.284 3.17848 117.482 0 121.429 0C125.377 0 128.574 3.17848 128.574 7.10195Z" fill="white"/>
+                           <path d="M185.716 7.10195C185.716 11.0254 182.518 14.204 178.571 14.204C174.624 14.204 171.426 11.0254 171.426 7.10195C171.426 3.17848 174.624 0 178.571 0C182.518 0 185.716 3.17848 185.716 7.10195Z" fill="white"/>
+                           <path d="M235.713 14.204C239.659 14.204 242.858 11.0243 242.858 7.10195C242.858 3.17963 239.659 0 235.713 0C231.767 0 228.568 3.17963 228.568 7.10195C228.568 11.0243 231.767 14.204 235.713 14.204Z" fill="white"/>
+                           <path d="M300 7.10195C300 11.0254 296.802 14.204 292.855 14.204C288.907 14.204 285.709 11.0254 285.709 7.10195C285.709 3.17848 288.907 0 292.855 0C296.802 0 300 3.17848 300 7.10195Z" fill="white"/>
+                           <path d="M7.155 70.9999C11.1012 70.9999 14.3002 67.8202 14.3002 63.8979C14.3002 59.9755 11.1012 56.7959 7.155 56.7959C3.20879 56.7959 0.00976562 59.9755 0.00976562 63.8979C0.00976562 67.8202 3.20879 70.9999 7.155 70.9999Z" fill="white"/>
+                           <path d="M64.2971 70.9999C68.2433 70.9999 71.4423 67.8202 71.4423 63.8979C71.4423 59.9755 68.2433 56.7959 64.2971 56.7959C60.3509 56.7959 57.1519 59.9755 57.1519 63.8979C57.1519 67.8202 60.3509 70.9999 64.2971 70.9999Z" fill="white"/>
+                           <path d="M121.429 70.9999C125.376 70.9999 128.575 67.8202 128.575 63.8979C128.575 59.9755 125.376 56.7959 121.429 56.7959C117.483 56.7959 114.284 59.9755 114.284 63.8979C114.284 67.8202 117.483 70.9999 121.429 70.9999Z" fill="white"/>
+                           <path d="M178.571 70.9999C182.517 70.9999 185.716 67.8202 185.716 63.8979C185.716 59.9755 182.517 56.7959 178.571 56.7959C174.625 56.7959 171.426 59.9755 171.426 63.8979C171.426 67.8202 174.625 70.9999 178.571 70.9999Z" fill="white"/>
+                           <path d="M235.713 70.9999C239.659 70.9999 242.858 67.8202 242.858 63.8979C242.858 59.9755 239.659 56.7959 235.713 56.7959C231.767 56.7959 228.568 59.9755 228.568 63.8979C228.568 67.8202 231.767 70.9999 235.713 70.9999Z" fill="white"/>
+                           <path d="M292.855 70.9999C296.801 70.9999 300 67.8202 300 63.8979C300 59.9755 296.801 56.7959 292.855 56.7959C288.908 56.7959 285.709 59.9755 285.709 63.8979C285.709 67.8202 288.908 70.9999 292.855 70.9999Z" fill="white"/>
+                           </svg>
+                           
+                           <svg class="crosses" xmlns="http://www.w3.org/2000/svg" width="136" height="75" viewBox="0 0 136 75" fill="none">
+                              <path d="M16.8718 28.5926V16.9673H28.4939V11.7161H16.8718V0.0908203H11.6221V11.7161H0V16.9673H11.6221V28.5926H16.8718Z" fill="#70B42D"/>
+                              <path d="M70.352 28.5926V16.9673H81.9741V11.7161H70.352V0.0908203H65.1023V11.7161H53.4802V16.9673H65.1023V28.5926H70.352Z" fill="#70B42D"/>
+                              <path d="M123.832 28.5926V16.9673H135.454V11.7161H123.832V0.0908203H118.582V11.7161H106.96V16.9673H118.582V28.5926H123.832Z" fill="#70B42D"/>
+                              <path d="M16.8718 74.5906V62.9653H28.4939V57.7142H16.8718V46.0889H11.6221V57.7142H0V62.9653H11.6221V74.5906H16.8718Z" fill="#70B42D"/>
+                              <path d="M70.352 74.5906V62.9653H81.9741V57.7142H70.352V46.0889H65.1023V57.7142H53.4802V62.9653H65.1023V74.5906H70.352Z" fill="#70B42D"/>
+                              <path d="M123.832 74.5906V62.9653H135.454V57.7142H123.832V46.0889H118.582V57.7142H106.96V62.9653H118.582V74.5906H123.832Z" fill="#70B42D"/>
+                            </svg>
 
                   </div>
                </div>
@@ -1029,7 +1173,8 @@
                   <div class="partners-header">
                      <div class="partners__title title-big">Организаторы и партнеры</div>
                      <div class="partners-header-svgs">
-                        <img src="img/partners/crosses.svg" alt="Crosses">
+                        <img class="six-crosses" src="img/partners/crosses.svg" alt="Crosses">
+                        <img class="three-crosses" src="img/partners/three-crosses.svg" alt="Crosses">
                         <img src="img/partners/arrows.svg" alt="Arrows">
                      </div>
                   </div>
@@ -1165,7 +1310,7 @@
          </section>
 
          <!-- FOOTER -->
-         <footer class="footer">
+         <footer class="footer" id="footer">
             <div class="container">
                <div class="footer-wrapper">
                   <div class="pseudo-cross">
@@ -1191,14 +1336,18 @@
                      
                   </div>
                   <div class="footer__right-side">
-                     <img src="img/hero/dots.svg" alt="Dots">
+                     <img class="dots" src="img/hero/dots.svg" alt="Dots">
                      <div class="social-media-wrapper">
                        <div class="social-media-links">
                            <img src="img/footer/telegram.svg" alt="Telegram">
                            <img src="img/footer/vk.svg" alt="Vk">
                            <img src="img/footer/r.svg" alt="R">
                        </div>
-                       <div class="social-media-text">Политика конфиденциальности</div>
+                       <div class="social-media-docs">                          
+                           <a href="docs/politika-konfidentsialnosti.docx" target="_blank">Политика конфиденциальности</a>
+                           <a href="docs/otkaz-ot-pretenziy.docx" target="_blank">Отказ от претензий от участника</a>
+                           <a href="docs/otkaz-ot-pretenziy-rebenok.docx" target="_blank">Отказ от претензий от опекуна ребенка</a>
+                     </div>
                      </div>
                   </div>
 

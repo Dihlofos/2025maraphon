@@ -2,17 +2,21 @@
    position: relative;
    z-index: 2;
 
-   @media (max-width: $tablet) {
-      padding: 4.4rem 0 3rem;
-   }
+   // @media (max-width: $tablet) {
+   //    padding: 4.4rem 0 ;
+   // }
 
-   @media (max-width: $mobile) {
-      padding: 9rem 0 6.5rem;
-   }
+   // @media (max-width: $mobile) {
+   //    padding: 9rem 0 6.5rem;
+   // }
 
    .faq-wrapper {
       padding-block: 13.7rem 19.5rem;
       position: relative;
+
+      @media (max-width: $tablet) {
+         padding-block: 4.1rem 19.5rem;
+      }
 
       .pseudo-group {
          display: flex;
@@ -22,12 +26,22 @@
          position: absolute;
          right: 0;
          top: -0.1rem;
+
+         @media (max-width: $tablet) {
+            display: none;
+         }
       }
 
       .pseudo-cross {
          position: absolute;
+         width: 100%;
          left: 30%;
          bottom: 0;
+
+         @media (max-width: $mobile) {
+            left: 50%;
+            transform: translateX(-50%);
+         }
       }
    }
 

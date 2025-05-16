@@ -9,18 +9,35 @@
          position: absolute;
          top: 0;
          right: 3rem;
+
+         @media (max-width: $tablet) {
+            width: 30rem;
+         }
+
+         @media (max-width: $mobile) {
+            width: 23.8rem;
+            right: -3rem;
+         }
       }
 
       .dots-pseudo {
          position: absolute;
          top: 10rem;
          left: 30%;
+
+          @media (max-width: $laptop) {
+            display: none;
+         }
       }
 
       .crosses-pseudo {
          position: absolute;
          top: 50rem;
          right: 3rem;
+
+         @media (max-width: $tablet) {
+            display: none;
+         }
       }
 
       
@@ -28,27 +45,75 @@
 
    .info-wrapper {
       padding-top: 14.5rem;
-      // padding-block: 14.5rem 17rem;
+
+      @media (max-width: $tablet) {
+         padding-top: 8.5rem;
+      }
+
+      @media (max-width: $mobile) {
+         padding-top: 4rem;
+      }
+   }
+
+   .slider-wrapper-info {
+      .info-button-prev, 
+      .info-button-next {
+         display: none;
+
+         @media (max-width: $tablet) {
+            display: block;
+         }
+      }
+
+      .slider-wrapper-info {
+         overflow: visible;          
+         position: relative;       
+       }
+       
+       .js-info-swiper-container {
+         overflow: visible;
+       }
+      
+   }
+
+   .slider-wrapper-info {
+       
+      .buttons-wrapper {
+         display: flex;
+         flex-direction: row;
+         gap: 1.5rem;
+         margin-top: 6.75rem;
+      }
    }
 
    &__title {
       color: $green;
    }
 
+   
+    
+    
+
    &__list {
       display: flex;
       flex-direction: row;
       gap: 4rem;
       margin-block: 9.3rem 12.8rem;
+
+      @media (max-width: $tablet) {
+         gap: 0;
+         margin-block: 1.5rem 4rem;
+      }
    }
 
    &__item-wrapper {
-      padding: 2.4rem 1.6rem 3.2rem;
+      padding: 2.4rem 1.6rem 3.2rem 1.7rem;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
       background-color: $black;
       max-width: 26rem;
+      height: auto;
 
       clip-path: polygon(
          0% 0%,
@@ -57,6 +122,13 @@
          calc(100% - 40px) 100%,
          0% 100%
       );
+
+
+      @media (max-width: $tablet) {
+         padding: 2.4rem 2.8rem 2rem 1.7rem;
+
+      }
+
    }
 
    &__item-title {
@@ -66,33 +138,72 @@
       line-height: 101%; /* 35.35px */
       text-transform: uppercase;
       color: $green;
+
+      @media (max-width: $tablet) {
+         font-size: 2.4rem;
+      }
    }
 
    &__item-text {
       font-family: $myriad;
       font-size: 1.5rem;
       font-weight: 400;
+      color: $white;
    }
 
    &__svgs-wrapper {
       display: flex;
       flex-direction: row;
       gap: 2.8rem;
+
+      .arrows {
+         max-width: 32.3rem;
+      }
+
+      .dots {
+         max-width: 19rem;
+      }
+
+      @media (max-width: $mobile) {
+         gap: 1.8rem; 
+
+         svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+      }
+
+      .black-arrow {
+         @media (max-width: $mobile) {
+            display: none;
+
+         }
+         
+      }
    }
 
    &__content {
       margin-block: 12.86rem 6.9rem;
+
+      @media (max-width: $tablet) {
+         margin-block: 7.65rem 8.6rem;
+      }
    }
 
    &__text {
       margin-top: 5.4rem;
       max-width: 84.4rem;
       color: $black;
+
+      @media (max-width: $tablet) {
+         margin-top: 3.1rem;
+      }
    }
 
-   // Slider
+   // Slider-zones
 
-   .slider-main-wrapper {
+   .slider-main-wrapper-zones {
       padding-bottom: 17rem;
       position: relative;
 
@@ -100,99 +211,153 @@
          position: absolute;
          bottom: 0rem;
          left: 38rem;
-      }
-   }
+         width: 42.37rem;
 
-   .slider-wrapper {
-      max-width: 125rem;
-      margin: 0 auto;
-      padding: 0 3rem; 
-      position: relative;
-      
-
-      .slider__btn {
-         position: absolute;
-         top: 50%;
-         transform: translateY(-50%);
-         z-index: 10;
-   
-         &--prev {
-            left: 0;  
-         }
-   
-         &--next {
-            right: 0;  
+         @media (max-width: $tablet) {
+            left: 3rem;
          }
       }
 
-      .info-button-prev::after,
-      .info-button-next::after {
-         display: none;
-      }
- 
-   }
-    
-   .slider {
-      width: 116rem;      
-      margin: 0 auto;    
-      overflow: hidden;
-   } 
+      .slider-wrapper {
+         max-width: 125rem;
+         margin: 0 auto;
+         padding: 0 3rem; 
+         position: relative;
+       
+         @media (max-width: $laptop) {
+            max-width: 116rem;
+            padding: 0rem;
+         }
 
-   &__slider-item {
-      display: flex;
-      flex-direction: column;
-      gap: 2.1rem;
-      background-color: $black;
-      padding: 4.25rem 1.9rem 2.6rem 3.7rem;
-      clip-path: polygon(
-         0% 0%,
-         100% 0%,
-         100% calc(100% - 40px),
-         calc(100% - 40px) 100%,
-         0% 100%
-      );
-   }
-
-   &__slider-item-title {
-      font-family: $mossport;
-      font-size: 3.5rem;
-      font-weight: 400;
-      line-height: 101%; 
-      text-transform: uppercase;
-      color: $white;
-   }
-
-   &__slider-item-content {
-      font-family: $myriad;
-      font-size: 1.5rem;
-      font-weight: 400;
-      line-height: normal;
-      color: $white;
-   }
-
-   &__slider-item-list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      font-family: Mossport;
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: 110%; /* 27.5px */
-      text-transform: uppercase;
-      color: $green;
-      
-
-    
-      li {
-        position: relative;
-        padding-left: 2rem; 
-
-        &::before {
-            content: '•'; 
+         @media (max-width: $tablet) {
+            min-width: initial;
+            max-width: initial;
+            padding: 0 24px;
+          }
+        
+          @media (max-width: $mobile) {
+            padding: 0 16px;
+          }
+       
+         
+   
+         .slider__btn {
             position: absolute;
-            left: 0;
-            top: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+
+            @media (max-width: $laptop) {
+               top: -6rem;
+               transform: translateY(0);
+               
+            }
+      
+            &--prev {
+               left: 0;  
+
+               @media (max-width: $tablet) {
+                  padding-left: 2.4rem;
+                }
+
+                @media (max-width: $mobile) {
+                  padding-left: 1.6rem;
+                }
+            }
+      
+            &--next {
+               right: 0;  
+
+               @media (max-width: $laptop) {
+                  left: 5.81rem;
+               }
+
+               @media (max-width: $tablet) {
+                  padding-left: 2.4rem;
+                  left: 4.81rem;
+                }
+
+                @media (max-width: $mobile) {
+                  padding-left: 1.6rem;
+                }
+            }
+
+            
          }
+   
+         .info-button-prev::after,
+         .info-button-next::after {
+            display: none;
+         }
+    
       }
-   } 
+       
+      .slider {
+         width: 116rem;      
+         margin: 0 auto;    
+         overflow: hidden;
+
+         @media (max-width: $tablet) {
+            width: auto;
+          }
+      } 
+
+      .zone-slider-item {
+         display: flex;
+         flex-direction: column;
+         gap: 2.1rem;
+         background-color: $black;
+         padding: 4.25rem 1.9rem 2.6rem 3.7rem;
+         clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% calc(100% - 40px),
+            calc(100% - 40px) 100%,
+            0% 100%
+         );
+      }
+   
+      .zone-slider-item-title {
+         font-family: $mossport;
+         font-size: 3.5rem;
+         font-weight: 400;
+         line-height: 101%; 
+         text-transform: uppercase;
+         color: $white;
+      }
+   
+      .zone-slider-item-content {
+         font-family: $myriad;
+         font-size: 1.5rem;
+         font-weight: 400;
+         line-height: normal;
+         color: $white;
+      }
+   
+      .zone-slider-item-list {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         font-family: Mossport;
+         font-size: 2.5rem;
+         font-weight: 400;
+         line-height: 110%; /* 27.5px */
+         text-transform: uppercase;
+         color: $green;
+         
+   
+       
+         li {
+           position: relative;
+           padding-left: 2rem; 
+   
+           &::before {
+               content: '•'; 
+               position: absolute;
+               left: 0;
+               top: 0;
+            }
+         }
+      } 
+   }  
 }

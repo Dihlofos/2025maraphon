@@ -1,24 +1,59 @@
 "use strict";
 (function () {
-   const swiper = new Swiper(".js-fitness-swiper-container", {
+   const fitnessSwiper = new Swiper(".js-fitness-swiper-container", {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 20,
       allowTouchMove: false, 
+      centeredSlides: false,
       navigation: {
         nextEl: ".fitness-button-next",
         prevEl: ".fitness-button-prev",
       },
       breakpoints: {
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        480: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
+         
+         
+         1280: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: true,
+          },
+        
+        
       },
     });
+
+   // const fitnessSwiper = new Swiper(".js-fitness-swiper-container", {
+   //    // Базово — 1 слайд
+   //    slidesPerView: 1,
+   //    spaceBetween: 20,          // отступ между слайдами и от кнопок ≤ 20px
+   //    allowTouchMove: false,     // свайп отключён
+   //    centeredSlides: true,     // без центрирования
+   //    navigation: {
+   //      nextEl: ".fitness-button-next",
+   //      prevEl: ".fitness-button-prev",
+   //    },
+   //    breakpoints: {
+   //      // от 1024 до 1279px — 2 слайда
+   //      1024: {
+   //        slidesPerView: 2,
+   //        spaceBetween: 20
+   //      },
+   //      // от 1280px и выше — 3 слайда
+   //      1280: {
+   //        slidesPerView: 3,
+   //        spaceBetween: 20
+   //      }
+   //    }
+   //  });
+    
 
    const sliderItems = document.querySelectorAll(".fitness__slider-item");
    const scheduleWrappers = document.querySelectorAll(".schedule-fitness-wrapper");

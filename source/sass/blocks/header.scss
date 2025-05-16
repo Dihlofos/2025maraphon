@@ -3,6 +3,10 @@
    background-color: $black;
    margin-bottom: 4.4rem;
 
+   @media (max-width: $mobile) {
+      display: none;
+    }
+
    clip-path: polygon(
       0% 0%,
       100% 0%,
@@ -11,11 +15,13 @@
       0% 100%
    );
 
-   &__nav {
+   &__nav-list{
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      margin: 0;
+      padding: 0;
    }
 
    &__nav a{

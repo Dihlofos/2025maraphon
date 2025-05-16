@@ -1,6 +1,6 @@
 "use strict";
 (function () {
-   const swiper = new Swiper(".js-concert-swiper-container", {
+   const concertSwiper = new Swiper(".js-concert-swiper-container", {
       slidesPerView: 4,
       spaceBetween: 40,
       navigation: {
@@ -8,11 +8,15 @@
         prevEl: ".concert-button-prev",
       },
       breakpoints: {
+         1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+         },
         768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
+         slidesPerView: 2,
+         spaceBetween: 40,
         },
-        480: {
+        0: {
           slidesPerView: 1,
           spaceBetween: 20,
         },

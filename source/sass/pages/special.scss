@@ -10,6 +10,11 @@
          position: absolute;
          top: 0;
          right: 3rem;
+
+         @media (max-width: $mobile) {
+            width: 9.6rem;
+            right: 0;
+          }
       }
    }
 
@@ -24,10 +29,88 @@
          color: $black;
       }
 
+      li {
+         list-style: none;
+      }
+
+      &__nav a {
+         text-decoration: none;
+      }
+
       &__nav-item-btn {
          background-color: transparent;
          color: $black;
          border: 2px solid $green;
+      }
+   }
+
+   // Logos
+
+   &__logos {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      align-items: center;
+      justify-content: center;
+
+       @media (max-width: $tablet) {
+         padding-block: 1.1rem;
+         gap: 1.95rem;
+       }
+
+       @media (max-width: $mobile) {
+         padding-block: 0.7rem;
+         gap: 1.95rem;
+       }
+   }
+
+   .cut-corner-top {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+
+       @media (max-width: $mobile) {
+         display: flex;
+         clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30px);
+         width: calc(100% - 4rem);
+         padding-block: 0.7rem;
+         gap: 1.95rem;
+         margin-top: 2.4rem;
+       }
+
+       .logo-img {
+         display: block;
+         height: auto;
+      }
+
+      .logo--dep {
+         width: 91px;
+   
+         @media (max-width: $tablet) {
+            width: 55.8px;
+   
+          }
+      }
+   
+      .logo--sport {
+         width: 108px;
+   
+         @media (max-width: $tablet) {
+            width: 66.3px;
+   
+          }
+      }
+   
+      .logo--pobeda {
+         width: 32px;
+   
+         @media (max-width: $tablet) {
+            width: 19.6px;
+          }
       }
    }
 
@@ -37,12 +120,27 @@
       &__header {
          max-width: 88.2rem;
          margin-bottom: 9rem;
+         position: relative;
+
+         @media (max-width: $laptop) {
+            padding-right: 18rem;
+         }
+
+         @media (max-width: $mobile) {
+            margin-bottom: 3.2rem;
+            margin-top: 4.6rem;
+            padding-right: 10rem;
+         }
       }
    }
 
    &__title {
       color: $bgcolor;
       margin-bottom: 7rem;
+
+      @media (max-width: $mobile) {
+         margin-bottom: 2.7rem;
+      }
    }
 
    &__text {
@@ -66,6 +164,18 @@
          flex-direction: row;
          align-items: center;
          gap: 2.6rem;
+
+         @media (max-width: $tablet) {
+            gap: 1.5rem;
+         }
+
+         img {
+            @media (max-width: $tablet) {
+               width: 2.6rem;
+               height: 2.6rem
+            }
+         }
+         
       }
 
       &__title {
@@ -77,6 +187,11 @@
          display: flex;
          flex-direction: column;
          gap: 4.85rem;
+
+         @media (max-width: $tablet) {
+            margin-block: 5.3rem 4.6rem;
+            gap: 2.2rem;
+         }
       }
 
       &__item {
@@ -85,6 +200,15 @@
          display: flex;
          flex-direction: row;
          gap: 4rem;
+
+         @media (max-width: $laptop) {
+            flex-direction: column;
+         }
+
+         @media (max-width: $tablet) {
+            padding: 2.7rem;
+            gap: 2rem;
+         }
       }
 
       &__item--registration {
@@ -109,6 +233,10 @@
 
       &__item--upcoming {
          background-color: $grey; 
+
+         @media (max-width: $laptop) {
+            background-color: #AEAEAE;
+         }
 
          .status-registration {
             display: none;
@@ -151,7 +279,15 @@
          width: 32rem;
          height: 22.6rem;
          clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
-         
+
+         @media (max-width: $laptop) {
+            width: 100%;
+            height: auto;
+         }
+
+         img {
+            width: inherit;
+         }
       }
 
       &__content {
@@ -159,6 +295,11 @@
          display: flex;
          flex-direction: column;
          justify-content: space-between;
+
+         @media (max-width: $laptop) {
+           gap: 2.15rem;
+         }
+
       }
 
       .top-side {
@@ -177,6 +318,14 @@
          display: flex;
          flex-direction: row;
          gap: 0.8rem;
+
+         img {
+            @media (max-width: $mobile) {
+               width: 2.5rem;
+               height: 2.5rem;
+            }
+         }
+         
       }
 
       .places-item-text {
@@ -186,6 +335,11 @@
          font-weight: 400;
          line-height: 101%; /* 35.35px */
          text-transform: uppercase;
+
+         @media (max-width: $mobile) {
+            font-size: 2.4rem;
+
+         }
       }
 
       .status-registration {
@@ -199,6 +353,11 @@
          font-size: 1.5rem;
          font-weight: 400;
          line-height: normal;
+
+         @media (max-width: $mobile) {
+            font-size: 1rem;
+            border-radius: 15px;
+         }
       }
 
       .status-upcoming {
@@ -212,6 +371,18 @@
          font-size: 1.5rem;
          font-weight: 400;
          line-height: normal;
+
+         @media (max-width: $mobile) {
+            border-radius: 1.5rem;
+            max-width: 13.1rem;
+            font-size: 1rem;
+         }
+      }
+
+      .status-past {
+         @media (max-width: $laptop) {
+            display: none;
+         }
       }
 
       .bottom-side {
@@ -220,6 +391,12 @@
          justify-content: space-between;
          align-items: end;
          gap: 3rem;
+
+         @media (max-width: $laptop) {
+            flex-direction: column;
+            align-items: start;
+            gap: 2.5rem;
+         }
       }
 
       .event-desc {
@@ -229,6 +406,17 @@
          font-weight: 400;
          line-height: 101%; /* 45.45px */
          text-transform: uppercase;
+
+         @media (max-width: $mobile) {
+            font-size: 3.5rem;
+         }
+      }
+
+      .event-link {
+         @media (max-width: $mobile) {
+            width: 100%;
+            display: flex;
+         }
       }
 
       .registration-link {
@@ -240,6 +428,12 @@
          font-weight: 400;
          line-height: normal;
          text-decoration: none;
+
+         @media (max-width: $mobile) {
+            font-size: 2.4rem;
+            width: 100%;
+            text-align: center;
+         }
       }
 
       .past-event {
@@ -252,26 +446,85 @@
          line-height: normal;
          text-decoration: none;
          width: 26.3rem;
+
+         @media (max-width: $mobile) {
+            font-size: 2.4rem;
+            width: 100%;
+            text-align: center;
+         }
+      }
+
+      .upcoming-event {
+         @media (max-width: $laptop) {
+            display: none;
+         }
       }
    }
 
    .specials-footer {
       padding-bottom: 9.7rem;
+
+      @media (max-width: $tablet) {
+         padding-bottom: 9.7rem;
+      }
+
+      .footer-top,
+      .footer-bottom {
+         display: flex;
+         flex-direction: row;
+         gap: 4rem;
+         justify-content: space-between;
+      }
+   
+      .footer-top {
+         @media (max-width: $laptop) {
+            margin-bottom: 3.9rem;
+         }
+      }
+   
+      .footer-top img {
+         @media (max-width: $laptop) {
+            display: none;
+         }
+      }
+   
+      .crosses {
+         @media (max-width: $mobile) {
+            width: 11.7rem;         
+         }
+         
+      }
+   
+      .hide-dots {
+         display: none;
+   
+         @media (max-width: $laptop) {
+            display: block;
+         }
+      }
+   
+      .dots-wrapper {
+         display: flex;
+         flex-direction: column;
+         gap: 3.6rem;
+   
+         @media (max-width: $tablet) {
+            gap: 2.36rem;
+         }
+         @media (max-width: $mobile) {
+            width: 16.4rem;         
+         }
+      }
+   
+      .footer-text {
+         color: $white;
+      }
+   
+      .footer-bottom {
+         margin-top: 3.6rem;
+      }
+
    }
 
-   .footer-top,
-   .footer-bottom {
-      display: flex;
-      flex-direction: row;
-      gap: 4rem;
-      justify-content: space-between;
-   }
-
-   .footer-text {
-      color: $white;
-   }
-
-   .footer-bottom {
-      margin-top: 3.6rem;
-   }
+   
 }
