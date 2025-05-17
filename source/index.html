@@ -638,59 +638,77 @@
 
                   <div class="stage-container stage-container-bottom">
 
-         
-
                      <div class="slider-fitness-main-wrapper">
+
+                        <div class="slider__btn slider__btn--prev fitness-button-prev">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 77" fill="none">
+                              <path d="M7.62939e-06 76.5L76 76.5L76 0.5L1.42735e-05 0.499993L7.62939e-06 76.5Z" fill="white"/>
+                              <path d="M60.5375 15.9562L37.9968 38.4969L60.5375 61.0376L37.9968 61.0376L15.4562 38.4969L37.9968 15.9562L60.5375 15.9562Z" fill="#B4CF50"/>
+                            </svg>
+                        </div>
+                        <div class="slider__btn slider__btn--next fitness-button-next">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 77" fill="none">
+                              <path d="M76 0.5L0 0.5L0 76.5L76 76.5L76 0.5Z" fill="white"/>
+                              <path d="M15.4624 61.0438L38.0031 38.5031L15.4624 15.9624L38.0031 15.9624L60.5437 38.5031L38.0031 61.0438H15.4624Z" fill="#B4CF50"/>
+                            </svg>
+                        </div>
+
+
+
                         <div class="slider-fitness-wrapper">
 
-                           <div class="slider__btn slider__btn--prev fitness-button-prev">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 77" fill="none">
-                                 <path d="M7.62939e-06 76.5L76 76.5L76 0.5L1.42735e-05 0.499993L7.62939e-06 76.5Z" fill="white"/>
-                                 <path d="M60.5375 15.9562L37.9968 38.4969L60.5375 61.0376L37.9968 61.0376L15.4562 38.4969L37.9968 15.9562L60.5375 15.9562Z" fill="#B4CF50"/>
-                               </svg>
-                           </div>
-                           <div class="slider__btn slider__btn--next fitness-button-next">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 77" fill="none">
-                                 <path d="M76 0.5L0 0.5L0 76.5L76 76.5L76 0.5Z" fill="white"/>
-                                 <path d="M15.4624 61.0438L38.0031 38.5031L15.4624 15.9624L38.0031 15.9624L60.5437 38.5031L38.0031 61.0438H15.4624Z" fill="#B4CF50"/>
-                               </svg>
-                           </div>
+                           
                           
                            
                            <div class="slider js-fitness-swiper-container">
                               
                               
                               <div class="swiper-wrapper">
-                                 <div class="slider__item swiper-slide fitness__slider-item" data-id="world-class">
-                                    <img src="img/schedule/world-class.svg" alt="World class">
 
-                                    <img class="fitness-logo-active" src="img/schedule/world-class-active.svg" alt="World class">
+                                 <div class="slider__item swiper-slide fitness__slider-item" >
+                                    <div class="fitness__slider-item-image-wrapper" data-id="world-class">
+                                       <img src="img/schedule/world-class.svg" alt="World class">
+                                       <img class="fitness-logo-active" src="img/schedule/world-class-active.svg" alt="World class">
+                                    </div>
                                  </div>
          
-                                 <div class="slider__item swiper-slide fitness__slider-item" data-id="x-fit">
-                                    <img src="img/schedule/x-fit.svg" alt="X fit">
-
-                                    <img class="fitness-logo-active" src="img/schedule/x-fit-active.svg" alt="World class">
+                                 <div class="slider__item swiper-slide fitness__slider-item" >
+                                    <div class="fitness__slider-item-image-wrapper" data-id="x-fit">
+                                       <img src="img/schedule/x-fit.svg" alt="X fit">
+                                       <img class="fitness-logo-active" src="img/schedule/x-fit-active.svg" alt="World class">
+                                    </div>
+                                    
                                  </div>
    
-                                 <div class="slider__item swiper-slide fitness__slider-item" data-id="ddx">
-                                    <img src="img/schedule/ddx.svg" alt="DDX">
-                                    <img class="fitness-logo-active" src="img/schedule/ddx-active.svg" alt="World class">
-                                 </div>
-   
-                                 <div class="slider__item swiper-slide fitness__slider-item">
-                                    <img src="img/schedule/crocus.svg" alt="Crocus fitness">
-                                    <img class="fitness-logo-active" src="img/schedule/crocus-active.svg" alt="World class">
-                                 </div>
-   
-                                 <div class="slider__item swiper-slide fitness__slider-item">
-                                    <img src="img/schedule/fitness-mania.svg" alt="Fitness mania">
-                                    <img class="fitness-logo-active" src="img/schedule/fitness-mania-active.svg" alt="World class">
+                                 <div class="slider__item swiper-slide fitness__slider-item" >
+                                    <div class="fitness__slider-item-image-wrapper" data-id="ddx">
+                                       <img src="img/schedule/ddx.svg" alt="DDX">
+                                       <img class="fitness-logo-active" src="img/schedule/ddx-active.svg" alt="World class">
+                                    </div>
+                                    
                                  </div>
    
                                  <div class="slider__item swiper-slide fitness__slider-item">
-                                    <img src="img/schedule/sssr.svg" alt="SSSR">
-                                    <img class="fitness-logo-active" src="img/schedule/sssr-active.svg" alt="World class">
+                                    <div class="fitness__slider-item-image-wrapper">
+                                       <img src="img/schedule/crocus.svg" alt="Crocus fitness">
+                                       <img class="fitness-logo-active" src="img/schedule/crocus-active.svg" alt="World class">
+                                    </div>
+                                 </div>
+   
+                                 <div class="slider__item swiper-slide fitness__slider-item">
+                                    <div class="fitness__slider-item-image-wrapper">
+                                       <img src="img/schedule/fitness-mania.svg" alt="Fitness mania">
+                                       <img class="fitness-logo-active" src="img/schedule/fitness-mania-active.svg" alt="World class">
+                                    </div>
+                                    
+                                 </div>
+   
+                                 <div class="slider__item swiper-slide fitness__slider-item">
+                                    <div class="fitness__slider-item-image-wrapper">
+                                       <img src="img/schedule/sssr.svg" alt="SSSR">
+                                       <img class="fitness-logo-active" src="img/schedule/sssr-active.svg" alt="World class">
+                                    </div>
+                                    
                                  </div>
                                  
                               </div>
@@ -699,6 +717,7 @@
 
                         
                      </div>
+
 
                      <div class="schedule-fitness-wrapper" data-id="world-class">
                         <div class="schedule-fitness-wrapper-item">

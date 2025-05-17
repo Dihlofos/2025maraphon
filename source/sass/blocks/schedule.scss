@@ -337,108 +337,224 @@
       }
    }
 
-
-   .slider-fitness-wrapper {
+   .slider-fitness-main-wrapper {
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 7.6rem;
-      margin-bottom: 7.55rem;
-    
-      @media (max-width: $laptop) {
-        height: auto;
-        flex-direction: column; // или row при необходимости, зависит от дизайна
-        gap: 2rem;
-      }
-    
-      .slider__btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-        width: 7.6rem;
-        height: 7.6rem;
-        flex-shrink: 0;
-        cursor: pointer;
-    
-        svg {
-          width: 100%;
-          height: 100%;
-        }
-    
-        &--prev {
-          left: 0;
-    
-         //  @media (max-width: $laptop) {
-         //    left: 1rem;
-         //    top: 50%;
-         //    transform: translateY(-50%);
-         //  }
-        }
-    
-        &--next {
-          right: 0;
-    
-         //  @media (max-width: $laptop) {
-         //    right: 1rem;
-         //    top: 50%;
-         //    transform: translateY(-50%);
-         //  }
-        }
-      }
-    
-      .info-button-prev::after,
-      .info-button-next::after {
-        display: none;
-      }
-    }
-    
-    .slider {
-      width: calc(100% - 12rem); // учёт 2 кнопок по 4rem + отступы
-      max-width: 76rem;
-      margin: 0 auto;
+      padding-inline: 9rem;
       overflow: hidden;
-    
-      @media (max-width: $laptop) {
-         // width: calc(100% - 10rem); // учёт 2 кнопок по 4rem + отступы
-         max-width: 72rem;
-        width: 100%;
-        padding: 0 5rem;
+      margin-bottom: 7.55rem;
+
+      @media (max-width: $tablet) {
+         padding-inline: 4.5rem;
+         margin-bottom: 3.2rem;
       }
-    
-      @media (max-width: 600px) {
-        padding: 0 3rem;
+
+         .slider__btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 7.6rem;
+            height: 7.6rem;
+            flex-shrink: 0;
+            cursor: pointer;
+
+            @media (max-width: $tablet) {
+               width: 4rem;
+               height: 4rem;
+            }
+         
+            svg {
+               width: 100%;
+               height: 100%;
+            }
+         
+            &--prev {
+               left: 0;      
+            }  
+
+               &--next {
+                  right: 0;
+               }
+         }
+
+         .slider-fitness-wrapper {
+            height: 7.6rem;
+
+            @media (max-width: $tablet) {
+               height: 4rem;
+            }
+         }
+
+         .fitness__slider-item {
+            display: flex;
+            justify-content: center;
+
+         }
+
+         .fitness__slider-item-image-wrapper {
+            width: 22.8rem;
+            height: 7.6rem;
+
+            @media (max-width: $tablet) {
+               width: 17.4rem;
+               height: 4rem;
+            }
+
+            img {
+               width: 22.8rem;
+               height: 7.6rem;
+
+               @media (max-width: $tablet) {
+                  width: 17.4rem;
+                  height: 4rem;
+               }
+            }
+         }
+
+         .fitness__slider-item-image-wrapper {
+               cursor: pointer;
+   
+            .fitness-logo-active {
+               display: none;
+            }
+   
+            &.active {
+               .fitness-logo-active {
+                  display: block;
+               }
+   
+            img:first-child {
+               display: none;
+            }
+            }
+         }
+
+         .info-button-prev::after,
+         .info-button-next::after {
+            display: none;
+         }
+
+
       }
+
+
+   // .slider-fitness-wrapper {
+   //    position: relative;
+   //    display: flex;
+   //    align-items: center;
+   //    justify-content: center;
+   //    height: 7.6rem;
+   //    margin-bottom: 7.55rem;
     
-      .swiper-wrapper {
-        display: flex;
-        align-items: center;
-      }
-    }
+   //    @media (max-width: $laptop) {
+   //      height: auto;
+   //      flex-direction: column; // или row при необходимости, зависит от дизайна
+   //      gap: 2rem;
+   //    }
     
-    .swiper-slide {
-      flex-shrink: 0;
-    }
+   //    .slider__btn {
+   //      position: absolute;
+   //      top: 50%;
+   //      transform: translateY(-50%);
+   //      z-index: 10;
+   //      width: 7.6rem;
+   //      height: 7.6rem;
+   //      flex-shrink: 0;
+   //      cursor: pointer;
     
-    .fitness__slider-item {
-      cursor: pointer;
+   //      svg {
+   //        width: 100%;
+   //        height: 100%;
+   //      }
     
-      .fitness-logo-active {
-        display: none;
-      }
+   //      &--prev {
+   //        left: 0;
     
-      &.active {
-        .fitness-logo-active {
-          display: block;
-        }
+   //       //  @media (max-width: $laptop) {
+   //       //    left: 1rem;
+   //       //    top: 50%;
+   //       //    transform: translateY(-50%);
+   //       //  }
+   //      }
     
-        img:first-child {
-          display: none;
-        }
-      }
-    }
+   //      &--next {
+   //        right: 0;
     
+   //       //  @media (max-width: $laptop) {
+   //       //    right: 1rem;
+   //       //    top: 50%;
+   //       //    transform: translateY(-50%);
+   //       //  }
+   //      }
+   //    }
+    
+   //    .info-button-prev::after,
+   //    .info-button-next::after {
+   //      display: none;
+   //    }
+   //  }
+    
+   //  .slider {
+   //    width: calc(100% - 12rem); // учёт 2 кнопок по 4rem + отступы
+   //    max-width: 76rem;
+   //    margin: 0 auto;
+   //    overflow: hidden;
+    
+   //    @media (max-width: $laptop) {
+   //       // width: calc(100% - 10rem); // учёт 2 кнопок по 4rem + отступы
+   //       max-width: 72rem;
+   //      width: 100%;
+   //      padding: 0 5rem;
+   //    }
+    
+   //    @media (max-width: 600px) {
+   //      padding: 0 3rem;
+   //    }
+    
+   //    .swiper-wrapper {
+   //      display: flex;
+   //      align-items: center;
+   //    }
+   //  }
+    
+   //  .swiper-slide {
+   //    flex-shrink: 0;
+   //  }
+    
+   //  .fitness__slider-item {
+   //    cursor: pointer;
+    
+   //    .fitness-logo-active {
+   //      display: none;
+   //    }
+    
+   //    &.active {
+   //      .fitness-logo-active {
+   //        display: block;
+   //      }
+    
+   //      img:first-child {
+   //        display: none;
+   //      }
+   //    }
+   //  }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    // .slider-fitness-wrapper {
    //    position: relative;

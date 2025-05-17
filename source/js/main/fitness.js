@@ -20,7 +20,7 @@
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          480: {
+          0: {
             slidesPerView: 1,
             spaceBetween: 20,
             centeredSlides: true,
@@ -55,7 +55,7 @@
    //  });
     
 
-   const sliderItems = document.querySelectorAll(".fitness__slider-item");
+   const sliderItems = document.querySelectorAll(".fitness__slider-item-image-wrapper");
    const scheduleWrappers = document.querySelectorAll(".schedule-fitness-wrapper");
    
    sliderItems.forEach((item) => {
