@@ -5,15 +5,16 @@
       position: absolute;
       display: flex;
       flex-direction: row;
-      right: 0;
+      right: 3rem;
       top: 0;
 
-      // @media (max-width: $tablet) {
-      //    top: -3rem;
-      //  }
+      @media (max-width: $mobile) {
+         right: 0;
+         top: -1rem;
+       }
 
       .pseudo-top-crosses {
-         margin-top: -10rem;
+         margin-top: -11rem;
 
          @media (max-width: $tablet) {
             display: none;
@@ -29,7 +30,7 @@
 }
 
 .concert-wrapper {
-   padding-top: 14.5rem;
+   padding-top: 13.9rem;
 
    @media (max-width: $tablet) {
       padding-top: 10rem;
@@ -55,11 +56,13 @@
    &__text {
       color: $black;
       max-width: 84.4rem;
-      margin-block: 3.6rem 11.1rem;
+      margin-block: 4.3rem 10.6rem;
+      line-height: normal;
 
       @media (max-width: $mobile) {
          max-width: 22.4rem;
-         margin-block: 2.9rem 12rem;
+         margin-block: 3rem 9.1rem;
+         line-height: 110%;
        }
    }
 
@@ -75,7 +78,7 @@
    // }
 
    .slider-wrapper {
-      max-width: 125rem;
+      max-width: 127rem;
       margin: 0 auto;
       padding: 0 3rem; 
       position: relative;
@@ -98,14 +101,18 @@
 
        .slider__btn {
          position: absolute;
-         top: 50%;
+         top: 44%;
          transform: translateY(-50%);
          z-index: 10;
+         cursor: pointer;
 
          @media (max-width: $laptop) {
             top: -6rem;
-            transform: translateY(0);
-            
+            transform: translateY(0);    
+         }
+
+         @media (max-width: $mobile) {
+            top: -5.5rem;   
          }
    
          &--prev {
@@ -133,10 +140,16 @@
              }
 
              @media (max-width: $mobile) {
-               padding-left: 1.6rem;
+               padding-left: 1.2rem;
              }
          }
 
+         img {
+            @media (max-width: $mobile) {
+               width: 3.49rem;
+               height: 3.49rem;
+            }
+         }
          
       }
 
@@ -164,7 +177,12 @@
       font-weight: 400;
       line-height: 101%; /* 35.35px */
       text-transform: uppercase;
-      margin-bottom: 1.1rem;
+      margin-bottom: 1.4rem;
+
+      @media (max-width: $mobile) {
+         font-size: 2.4rem;
+         margin-bottom: 0.8rem;
+       }
    }
 
    &__slider-item-time {
@@ -173,19 +191,22 @@
       font-size: 1.5rem;
       font-weight: 400;
       line-height: normal;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
 
+      @media (max-width: $mobile) {
+         margin-bottom: 1.3rem;
+      }
    }
 
    &__slider-item-image-wrapper {
       width: 100%;
       overflow: hidden;
       clip-path: polygon(
-         0 0,         /* верхний левый угол */
-         100% 0,      /* верхний правый угол */
-         100% 65%,    /* правый нижний угол квадрата */
-         50% 100%,    /* нижний центр — вершина треугольника */
-         0 65%        /* левый нижний угол квадрата */
+         0 0,        
+         100% 0,    
+         100% 59%,  
+         50% 100%,    
+         0 59%       
       );
 
       img {
@@ -204,10 +225,10 @@
       position: relative;
       display: flex;
       justify-content: center;
-      padding-block: 13rem;
+      padding-block: 10.55rem;
 
       @media (max-width: $tablet) {
-         padding-block: 0rem 11.2rem;
+         padding-block: 0rem 10.55rem;
          justify-content: end;
       }
 
@@ -223,12 +244,14 @@
          }
 
          @media (max-width: $tablet) {
-            top: -8rem;
+            top: -11rem;
             bottom: auto;
          }
       }
 
       .dots {
+         margin: 1.5rem 0 0 4rem;
+
          @media (max-width: $tablet) {
             display: none;
           }
@@ -238,6 +261,11 @@
          display: none;
 
          @media (max-width: $tablet) {
+            display: block;
+          }
+
+          @media (max-width: $mobile) {
+            max-width: 13.5rem;
             display: block;
           }
       }

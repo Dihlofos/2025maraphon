@@ -14,17 +14,17 @@
 
          @media (max-width: $mobile) {
             width: 23.8rem;
-            right: -3rem;
+            right: -3.3rem;
          }
    
       }
    }
 
    .hero-wrapper {
-      padding-bottom: 17rem;
+      padding-bottom: 9.2rem;
 
       @media (max-width: $tablet) {
-         padding-bottom: 5.5rem;
+         padding-bottom: 5.3rem;
       }
    }
 
@@ -33,15 +33,15 @@
    &__top {
       display: flex;
       flex-direction: row;
-      gap: 1.8rem;
-      height: 10.2rem;
+      gap: 4rem;
+      height: 9.2rem;
 
       @media (max-width: $tablet) {
          display: grid;
          gap: 1.29rem;
          height: auto;
        
-           grid-template-columns: 7.6rem auto;
+           grid-template-columns: 5.4rem auto;
            grid-template-rows: auto auto;
        
            .hero__logos {
@@ -69,18 +69,20 @@
    &__logos {
       display: flex;
       flex-direction: row;
-      gap: 3rem;
+      gap: 6rem;
       align-items: center;
       justify-content: center;
+      max-width: 52.7rem;
 
        @media (max-width: $tablet) {
          padding-block: 1.1rem;
          gap: 1.95rem;
+         max-width: 100%;
        }
 
        @media (max-width: $mobile) {
-         padding-block: 0.7rem;
-         gap: 1.95rem;
+         padding-block: 0.6rem;
+         gap: 3.8rem;
        }
    }
 
@@ -90,7 +92,8 @@
    }
 
    .logo--dep {
-      width: 91px;
+      width: 11rem;
+      margin-top: 0.4rem;
 
       @media (max-width: $tablet) {
          width: 55.8px;
@@ -99,7 +102,7 @@
    }
 
    .logo--sport {
-      width: 108px;
+      width: 13rem;
 
       @media (max-width: $tablet) {
          width: 66.3px;
@@ -118,7 +121,7 @@
 
    &__top-arrow {
       @media (max-width: $tablet) {
-         height: 7.6rem;
+         height: 5.4rem;
        }
    }
 
@@ -134,7 +137,7 @@
        }
 
        @media (max-width: $mobile) {
-         width: calc(100% - 4rem);
+         width: calc(100% - 4.2rem);
        }
    }
 
@@ -146,56 +149,38 @@
 
       display: flex;
       align-items: center;
+      justify-content: center;
 
       clip-path: polygon(
          0% 0%,
          100% 0%,
-         100% calc(100% - 50px),
-         calc(100% - 50px) 100%,
-         0% 100%
-       );
+         100% 100%,
+         46px 100%,
+         0% calc(100% - 46px)
+      );
 
        @media (max-width: $tablet) {
          max-width: 100%;
-         height: 7.6rem;
+         height: 5.4rem;
          clip-path: polygon(
             0% 0%,
             100% 0%,
-            100% calc(100% - 30px),
-            calc(100% - 30px) 100%,
-            0% 100%
-          );
-      }
-
-       @media (max-width: $mobile) {
-
-         clip-path: polygon(
-            0% 0%,
-            100% 0%,
-            100% calc(100% - 35px),
-            calc(100% - 35px) 100%,
-            0% 100%
-          );
+            100% 100%,
+            30px 100%,
+            0% calc(100% - 30px)
+         );
       }
 
       .text-medium {
          font-family: $mossport;
-         font-size: 10rem;
+         font-size: 9rem;
          line-height: 100%;
          color: $white;
-         // margin-bottom: -2rem;
          margin-left: 1.45rem;
    
          @media (max-width: $tablet) {
-            font-size: 7.5rem;
+            font-size: 5.2rem;
             margin-left: 1rem;
-            // margin-bottom: -1.7rem;
-         }
-
-         @media (max-width: $mobile) {
-            font-size: 3.7rem;
-            margin-left: 1rem;
-            // margin-bottom: -1.7rem;
          }
       }
    }
@@ -206,7 +191,7 @@
 
    &__portal-wrapper {
       background-color: $black-100;
-      padding: 0.9rem 2rem;
+      padding: 0.8rem 3.4rem 0.5rem;
       width: fit-content;
       margin-top: 2.3rem;
 
@@ -214,6 +199,8 @@
          width: 100%;
          margin-top: 1.29rem;
          text-align: center;
+         padding: 0.8rem 3.4rem;
+
       }
    }
 
@@ -225,6 +212,11 @@
       line-height: normal;
       text-transform: uppercase;
       text-decoration: none;
+      transition: 0.3s ease;
+
+      &:hover {
+         color: $green;
+      }
 
       @media (max-width: $tablet) {
          font-size: 2.4rem;
@@ -236,13 +228,13 @@
    // Tittle
 
    &__title-wrapper {
-      margin-block: 4.1rem 10.5rem;
+      margin-block: 3.5rem 8rem;
       width: 100%;
       max-width: fit-content;
       margin-inline: auto;
 
       @media (max-width: $mobile) {
-         margin-block: 4.5rem 4.9rem;
+         margin-block: 4rem 4.1rem;
       }
    }
 
@@ -251,7 +243,7 @@
       flex-direction: row;
       align-items: center;
       gap: 7.24rem;
-      margin-bottom: 4.2rem;
+      // margin-bottom: 2.2rem;
 
       @media (max-width: $tablet) {
          gap: 2rem;
@@ -299,22 +291,29 @@
 
    &__place {
       background-color: $green;
-      padding: 1.7rem 6rem 1.7rem 2.45rem;
-      margin-bottom: 7rem;
+      padding: 1rem 6rem 1rem 2.45rem;
+      margin-bottom: 6rem;
       clip-path: polygon(
          0% 0%,
          100% 0%,
-         100% calc(100% - 35px),
-         calc(100% - 35px) 100%,
+         100% calc(100% - 47px),
+         calc(100% - 47px) 100%,
          0% 100%
       );
 
-      // @media (max-width: $tablet) {
-      //    max-height: 7.5rem;
-      // }
+      @media (max-width: $tablet) {
+         margin-bottom: 5rem;
+      }
 
       @media (max-width: $mobile) {
-         padding: 0.9rem 1.5rem 0.9rem 1.17rem;
+         padding: 1rem 1.5rem 0.9rem 1.17rem;
+         clip-path: polygon(
+         0% 0%,
+         100% 0%,
+         100% calc(100% - 25px),
+         calc(100% - 25px) 100%,
+         0% 100%
+      );
       }
 
    }
@@ -328,8 +327,8 @@
       @media (max-width: $tablet) {
          max-width: 100%;
          gap: 1.29rem;
-         align-items: start;
-         justify-content: start;
+         align-items: flex-start;
+         justify-content: flex-start;
       }
    }
 
@@ -349,6 +348,7 @@
       text-transform: uppercase;
       color: $white;
       max-width: 50.1rem;
+      margin-left: 0.6rem;
 
       @media (max-width: $tablet) {
          max-width: 100%;
@@ -356,6 +356,8 @@
 
       @media (max-width: $mobile) {
          font-size: 2.4rem;
+         margin-left: 0.1rem;
+         line-height: normal;
       }
    }
 
@@ -424,7 +426,7 @@
       @media (max-width: $mobile) {
          display: flex;
          flex-direction: row;
-         align-items: start;
+         align-items: flex-start;
          gap: 0.73rem;
       }
 
@@ -455,24 +457,38 @@
          flex-direction: column-reverse;
          gap: 3.4rem;
        }
+
+       @media (max-width: $mobile) {
+         margin-top: 6rem;
+      }
    }
 
    &__content-left {
-      flex: 60%;
+      flex: 59%;
       display: flex;
       flex-direction: column;
       gap: 4rem;
 
       @media (max-width: $tablet) {
          gap: 2rem;
-       }
+      }
+
+      @media (max-width: $mobile) {
+         gap: 1.4rem;
+      }
    }
 
    &__content-text {
-      // font-family: $myriad;
-      // font-size: 2.5rem;
-      // font-weight: 400; 
-      color: $white;     
+      font-family: $myriad;
+      font-size: 2.5rem;
+      font-weight: 400; 
+      line-height: 115%;
+      color: $white;    
+      
+      @media (max-width: $mobile) {
+         font-size: 1.4rem;
+         line-height: normal;
+      }
    }
 
    &__content-text span {
@@ -480,16 +496,17 @@
    }
 
    &__content-right {
-      flex: 40%;
+      flex: 41%;
       position: relative;
 
       .pseudo-arrows {
          position: absolute;
          top: -17rem;
          left: 50%;
-         transform: translateX(-80%);
+         transform: translateX(-78%);
          display: flex;
          flex-direction: row;
+         gap: 1rem;
 
          @media (max-width: $tablet) {
            display: none;
@@ -512,6 +529,10 @@
       @media (max-width: $tablet) {
          display: none;
        }
+
+       img {
+         max-width: 19rem;
+       }
    }
 
    &__content-link-container-small {
@@ -522,6 +543,7 @@
          flex-direction: column;
          justify-content: center;
          gap: 3.99rem;
+         margin-top: -0.7rem;
       }
 
        img {
@@ -537,7 +559,7 @@
       flex: 1;
 
       @media (max-width: $tablet) {
-         max-width: 34.2rem;
+         max-width: 35.2rem;
       }
    }
 

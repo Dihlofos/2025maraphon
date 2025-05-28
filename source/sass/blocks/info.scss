@@ -16,14 +16,14 @@
 
          @media (max-width: $mobile) {
             width: 23.8rem;
-            right: -3rem;
+            right: -3.3rem;
          }
       }
 
       .dots-pseudo {
          position: absolute;
-         top: 10rem;
-         left: 30%;
+         top: 6.8rem;
+         left: 40%;
 
           @media (max-width: $laptop) {
             display: none;
@@ -32,7 +32,7 @@
 
       .crosses-pseudo {
          position: absolute;
-         top: 50rem;
+         top: 47rem;
          right: 3rem;
 
          @media (max-width: $tablet) {
@@ -51,7 +51,7 @@
       }
 
       @media (max-width: $mobile) {
-         padding-top: 4rem;
+         padding-top: 3.7rem;
       }
    }
 
@@ -62,6 +62,11 @@
 
          @media (max-width: $tablet) {
             display: block;
+         }
+
+         @media (max-width: $mobile) {
+            width: 3.5rem;
+            height: 3.5rem;
          }
       }
 
@@ -76,18 +81,32 @@
       
    }
 
+   
    .slider-wrapper-info {
        
       .buttons-wrapper {
          display: flex;
          flex-direction: row;
          gap: 1.5rem;
-         margin-top: 6.75rem;
+         // margin-top: 6.75rem;
+
+         @media (max-width: $mobile) {
+            gap: 0.7rem;
+         }
       }
+
+      
    }
 
    &__title {
       color: $green;
+   }
+
+   &__title-info {
+
+      @media (max-width: $mobile) {
+         padding-bottom: 7rem;
+      }
    }
 
    
@@ -98,7 +117,7 @@
       display: flex;
       flex-direction: row;
       gap: 4rem;
-      margin-block: 9.3rem 12.8rem;
+      margin-block: 9.1rem 12.3rem;
 
       @media (max-width: $tablet) {
          gap: 0;
@@ -107,7 +126,7 @@
    }
 
    &__item-wrapper {
-      padding: 2.4rem 1.6rem 3.2rem 1.7rem;
+      padding: 2rem 1.6rem 3.2rem 1.7rem;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -118,15 +137,15 @@
       clip-path: polygon(
          0% 0%,
          100% 0%,
-         100% calc(100% - 40px),
-         calc(100% - 40px) 100%,
+         100% calc(100% - 55px),
+         calc(100% - 55px) 100%,
          0% 100%
       );
 
 
       @media (max-width: $tablet) {
-         padding: 2.4rem 2.8rem 2rem 1.7rem;
-
+         padding: 2.2rem 2.8rem 2rem 2.4rem;
+         gap: 2.4rem;
       }
 
    }
@@ -148,6 +167,8 @@
       font-family: $myriad;
       font-size: 1.5rem;
       font-weight: 400;
+      font-size: 15px;
+      line-height: normal;
       color: $white;
    }
 
@@ -162,6 +183,10 @@
 
       .dots {
          max-width: 19rem;
+
+         @media (max-width: $mobile) {
+            max-width: 12rem;
+         }
       }
 
       @media (max-width: $mobile) {
@@ -175,6 +200,8 @@
       }
 
       .black-arrow {
+         width: 9.2rem;
+
          @media (max-width: $mobile) {
             display: none;
 
@@ -184,10 +211,10 @@
    }
 
    &__content {
-      margin-block: 12.86rem 6.9rem;
+      margin-block: 12rem 6.6rem;
 
       @media (max-width: $tablet) {
-         margin-block: 7.65rem 8.6rem;
+         margin-block: 7.3rem 10rem;
       }
    }
 
@@ -195,16 +222,17 @@
       margin-top: 5.4rem;
       max-width: 84.4rem;
       color: $black;
+      line-height: normal;
 
       @media (max-width: $tablet) {
-         margin-top: 3.1rem;
+         margin-top: 3.3rem;
       }
    }
 
    // Slider-zones
 
    .slider-main-wrapper-zones {
-      padding-bottom: 17rem;
+      padding-bottom: 17.5rem;
       position: relative;
 
       .big-green-arrows-pseudo {
@@ -219,7 +247,7 @@
       }
 
       .slider-wrapper {
-         max-width: 125rem;
+         max-width: 127rem;
          margin: 0 auto;
          padding: 0 3rem; 
          position: relative;
@@ -243,15 +271,27 @@
    
          .slider__btn {
             position: absolute;
-            top: 50%;
+            top: 56%;
             transform: translateY(-50%);
             z-index: 10;
+            cursor: pointer;
 
             @media (max-width: $laptop) {
                top: -6rem;
                transform: translateY(0);
-               
             }
+
+            @media (max-width: $mobile) {
+               top: -5.5rem;
+            }
+
+            img {
+               @media (max-width: $mobile) {
+                  width: 3.5rem;
+                  height: 3.5rem;
+                }
+            }
+            
       
             &--prev {
                left: 0;  
@@ -278,12 +318,20 @@
                 }
 
                 @media (max-width: $mobile) {
-                  padding-left: 1.6rem;
+                  padding-left: 1rem;
                 }
             }
 
             
          }
+
+         // .info-button-prev,
+         // .info-button-next {
+         //    @media (max-width: $mobile) {
+         //       width: 3.5rem;
+         //       height: 3.5rem;
+         //    }
+         // }
    
          .info-button-prev::after,
          .info-button-next::after {
@@ -309,12 +357,17 @@
          background-color: $black;
          padding: 4.25rem 1.9rem 2.6rem 3.7rem;
          clip-path: polygon(
-            0% 0%,
-            100% 0%,
-            100% calc(100% - 40px),
-            calc(100% - 40px) 100%,
-            0% 100%
+            60px 0,
+            100% 0,
+            100% 100%,
+            0 100%,
+            0 60px
          );
+
+         @media (max-width: $mobile) {
+            gap: 2.3rem;
+            padding: 4rem 1.9rem 2.6rem 3.7rem;
+         }
       }
    
       .zone-slider-item-title {
@@ -324,6 +377,10 @@
          line-height: 101%; 
          text-transform: uppercase;
          color: $white;
+
+         @media (max-width: $mobile) {
+            font-size: 2.4rem;
+         }
       }
    
       .zone-slider-item-content {
@@ -345,11 +402,14 @@
          text-transform: uppercase;
          color: $green;
          
-   
+         @media (max-width: $mobile) {
+            line-height: 104%;
+            margin-top: -0.4rem;
+         }
        
          li {
            position: relative;
-           padding-left: 2rem; 
+           padding-left: 2.3rem; 
    
            &::before {
                content: '•'; 

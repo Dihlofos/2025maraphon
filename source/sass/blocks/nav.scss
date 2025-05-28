@@ -22,8 +22,8 @@
     position: fixed;
     background: none;
     border: none;
-    top: 2.6rem;
-    right: 1.5rem;
+    top: 2.5rem;
+    right: 1rem;
     z-index: 70;
   }
 
@@ -37,10 +37,10 @@
       height: 100%;
       background-color: $black-100;
       z-index: 72;
-      padding: 6.7rem 2.6rem;
+      padding: 6.5rem 2.6rem;
       background-image: url("../img/nav/arrows-up.svg");
       background-repeat: no-repeat;
-      background-position: right bottom;
+      background-position: right calc(100% + 6.3rem);
 
       .nav.is-active & {
         display: block;
@@ -54,26 +54,26 @@
     padding: 0;
     margin: 0;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.7rem;
   }
 
   .nav__list li:last-child {
-      margin-top: 1rem;
+      margin-top: 0.8rem;
    }
 
   &__close {
     position: absolute;
-    top: 2.3rem;
-    right: 1.6rem;
+    top: 2.8rem;
+    right: 2.2rem;
     background: none;
     border: none;
     width: 3.5rem;
     height: 3.5rem;
 
-    svg {
-      width: 100%;
-      height: 100%;
-    }
+   //  svg {
+   //    width: 100%;
+   //    height: 100%;
+   //  }
   }
 
   &__item {
@@ -99,14 +99,14 @@
   }
 
    &__item-btn {
-      padding: 10px;
+      padding: 0.8rem 1rem 0.6rem;
       background-color: $bgcolor;
       color: $black-100;
       font-family: $mossport;
       font-size: 3.6rem;
       font-style: normal;
       font-weight: 400;
-      line-height: normal;
+      line-height: 100%;
       text-transform: uppercase;
       margin-top: 1.5rem;
       text-decoration: none;

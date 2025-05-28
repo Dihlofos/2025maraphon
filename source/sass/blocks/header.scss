@@ -1,5 +1,5 @@
 .header {
-   padding: 1.6rem 4.3rem 1.8rem 3.2rem;
+   padding: 1.6rem 4.3rem 2rem 3.2rem;
    background-color: $black;
    margin-bottom: 4.4rem;
 
@@ -10,8 +10,8 @@
    clip-path: polygon(
       0% 0%,
       100% 0%,
-      100% calc(100% - 25px),
-      calc(100% - 25px) 100%,
+      100% calc(100% - 30px),
+      calc(100% - 30px) 100%,
       0% 100%
    );
 
@@ -32,108 +32,27 @@
       font-family: $myriad;
       font-size: 1.5rem;
       color: $white;
+
+      &:hover {
+         text-decoration: underline;
+      }
    }
 
    &__nav-item-btn {
       font-family: $myriad;
       font-size: 1.5rem;
-      color: $white;
-      padding: 0.5rem 0.8rem;
-      background-color: $green;
+      padding: 0.65rem 0.8rem;
+      background-color: $bgcolor;
       color: $black;
+      transition: 0.3s ease;
+
+      &:hover {
+         color: $white;
+         background-color: $green;
+
+      }
    }
 
 }
 
 
-
-// .header {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   background-color: $bgcolor;
-//   z-index: 60;
-
-//   @media (max-width: $tablet) {
-//     padding-bottom: 1.5rem;
-//   }
-
-//   @media (max-width: $mobile) {
-//     padding-bottom: 2.2rem;
-//   }
-
-
-//   .container {
-//     max-width: 116rem;
-//   }
-
-//   &__nav {
-//     position: relative;
-//     padding: 2rem 0 0 0;
-//     flex-shrink: 0;
-//     z-index: 2;
-//   }
-
-//   &__content {
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: space-between;
-//     gap: 2rem;
-//     width: 100%;
-//   }
-
-//   &__logos {
-//     position: relative;
-//     display: flex;
-//     gap: 2.2rem;
-//     padding: 1.9rem 0;
-//     z-index: 2;
-
-//     @media (max-width: $tablet) {
-//       align-self: center;
-//       gap: 1.8rem;
-//       padding: 1.5rem 0 0 0px;
-//     }
-
-//     @media (max-width: $mobile) {
-//       gap: 2rem;
-//       padding: 2rem .6rem 0 0;
-//     }
-//   }
-
-//   &__logo {
-//     transition: 0.2s color ease-in;
-
-//     img {
-//       width: auto;
-
-//       @media (max-width: $tablet) {
-//         width: 7.4rem;
-//       }
-
-//       @media (max-width: $mobile) {
-//         width: 6.7rem;
-//       }
-//     }
-
-//     svg {
-//       fill: currentColor;
-//     }
-
-//     &:hover {
-//       color: $purple;
-//     }
-
-//     &:nth-child(2) {
-//       @media (max-width: $mobile) {
-//         img {
-//           width: 7.7rem;
-//         }
-
-//       }
-//     }
-//   }
-
-
-// }

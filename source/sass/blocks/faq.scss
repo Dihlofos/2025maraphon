@@ -11,11 +11,15 @@
    // }
 
    .faq-wrapper {
-      padding-block: 13.7rem 19.5rem;
+      padding-block: 13rem 16.7rem;
       position: relative;
 
       @media (max-width: $tablet) {
-         padding-block: 4.1rem 19.5rem;
+         padding-block: 3.8rem 19.5rem;
+      }
+
+      @media (max-width: $mobile) {
+         padding-block: 3.8rem 9.1rem;
       }
 
       .pseudo-group {
@@ -25,7 +29,7 @@
          gap: 8.8rem;
          position: absolute;
          right: 0;
-         top: -0.1rem;
+         top: 4.5rem;
 
          @media (max-width: $tablet) {
             display: none;
@@ -35,7 +39,7 @@
       .pseudo-cross {
          position: absolute;
          width: 100%;
-         left: 30%;
+         left: 59%;
          bottom: 0;
 
          @media (max-width: $mobile) {
@@ -50,14 +54,14 @@
       z-index: 2;
       // margin: 0 0 5rem;
       color: $white;
-      margin-bottom: 8.2rem;
+      margin-bottom: 4rem;
 
       @media (max-width: $tablet) {
          margin: 0 0 3.7rem;
       }
 
       @media (max-width: $mobile) {
-         margin: 0 0 2.4rem;
+         margin: 0 0 1rem;
       }
    }
 
@@ -79,10 +83,11 @@
       }
 
       @media (max-width: $mobile) {
-         padding: 0 0 1.6rem;
+         border-bottom: 2px solid $green;
+         margin: 0 0 2.6rem;
 
          &:first-child {
-         padding: 1.4rem 0 1.4rem;
+            padding: 1.4rem 0 1.4rem;
          }
       }
    }
@@ -115,7 +120,7 @@
 
       @media (max-width: $mobile) {
          font-size: 2.4rem;
-         line-height: 1.1;
+         line-height: 100%;
          text-align: left;
          align-items: flex-start;
          gap: 1rem;
@@ -167,7 +172,7 @@
 
       @media (max-width: $mobile) {
          margin: 0 0 0 1rem;
-         top: 1rem;
+         top: 0.2rem;
       }
    }
 
@@ -177,9 +182,9 @@
       color: $black;
       font-weight: 400;
       font-size: 2.6rem;
-      line-height: 1.2;
-      margin: 3rem 0 0;
-      max-width: 120rem;
+      line-height: 100%;
+      margin: 3rem 0 1.1rem;
+      max-width: 110rem;
 
       @media (max-width: $tablet) {
          font-size: 2rem;
@@ -190,7 +195,8 @@
 
       @media (max-width: $mobile) {
          font-size: 1.4rem;
-         margin: 2.5rem 0 0;
+         margin: 2.8rem 0 0;
+         padding: 0 0 1.6rem;
       }
 
       &.active {
