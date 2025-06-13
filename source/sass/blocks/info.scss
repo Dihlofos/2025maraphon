@@ -45,9 +45,11 @@
 
    .info-wrapper {
       padding-top: 14.5rem;
+      padding-bottom: 14.5rem;
 
       @media (max-width: $tablet) {
          padding-top: 8.5rem;
+         padding-bottom: 6.4rem;
       }
 
       @media (max-width: $mobile) {
@@ -103,6 +105,7 @@
    }
 
    &__title-info {
+      color: $green;
 
       @media (max-width: $mobile) {
          padding-bottom: 7rem;

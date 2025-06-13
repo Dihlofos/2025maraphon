@@ -21,7 +21,7 @@
    }
 
    .hero-wrapper {
-      padding-bottom: 9.2rem;
+      padding-bottom: 15rem;
 
       @media (max-width: $tablet) {
          padding-bottom: 5.3rem;
@@ -355,10 +355,13 @@
       }
 
       @media (max-width: $mobile) {
-         font-size: 2.4rem;
          margin-left: 0.1rem;
          line-height: normal;
       }
+
+      .nowrap {
+         white-space: nowrap;
+       }
    }
 
    &__place-title {

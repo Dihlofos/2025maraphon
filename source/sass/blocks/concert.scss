@@ -1,3 +1,8 @@
+.concert {
+   position: relative;
+   z-index: 10;
+}
+
 .concert-container {
    position: relative;
 
@@ -10,7 +15,7 @@
 
       @media (max-width: $mobile) {
          right: 0;
-         top: -1rem;
+         // top: -1rem;
        }
 
       .pseudo-top-crosses {

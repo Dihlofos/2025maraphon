@@ -19,7 +19,10 @@
       @media (max-width: $laptop) {
          flex-direction: column;
          align-items: start;
-         margin-block: 4.18rem;
+         // margin-block: 4.18rem;
+         margin-bottom: 3.4rem;
+         margin-top: -0.4rem;
+         gap: 2rem;
       }
 
       &__title {
@@ -42,8 +45,8 @@
          clip-path: polygon(
             0% 0%,
             100% 0%,
-            100% calc(100% - 50px),
-            calc(100% - 50px) 100%,
+            100% calc(100% - 20px),
+            calc(100% - 20px) 100%,
             0% 100%
          );
    
@@ -89,9 +92,11 @@
             max-width: 100%;
          }
    
-         @media (max-width: $mobile) {
-            font-size: 2.4rem;
-         }
+   
+
+         .nowrap {
+            white-space: nowrap;
+          }
       }
    }
 
@@ -106,11 +111,25 @@
 
       @media (max-width: $laptop) {
          flex-direction: column;
+         gap: 2.2rem;
+         margin-bottom: 4rem;
       }
 
       @media (max-width: $tablet) {
          padding: 3.8rem 3rem;  
+         
       }
+
+      .arrow-wrapper {
+         display: none;
+
+         @media (max-width: $laptop) {             
+            display: flex;
+            width: 100%;
+            justify-content: center;
+         }
+         }
+
 
       .map-visual-wrapper {
          width: 59.8rem;
@@ -122,6 +141,83 @@
             aspect-ratio: 598 / 582;
             height: auto;
          }
+
+         .loc-item {
+            position: absolute;
+            z-index: 50;
+            top: 28%;
+            left: 52%;
+
+            .loc-number-wrapper {
+               position: relative;
+            }
+
+
+            .loc-number {
+               width: 1.8rem;
+               height: 1.8rem;
+               border-radius: 50%;
+               background-color: $black;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-shrink: 0;
+               position: relative;
+               z-index: 40;
+               color: $bgcolor;
+               font-family: $mossport;
+               font-size: 1.5rem;
+               font-weight: 400;
+               line-height: 101%; /* 35.35px */
+               text-transform: uppercase;
+               transition: background-color 0.3s ease, color 0.3s ease;
+      
+               @media (max-width: $mobile) {
+                  width: 0.98rem;
+                  height: 0.98rem;
+                  font-size: 0.82rem;
+                }
+
+                &.hovered {
+                  background-color: $green;
+                  color: $black;
+
+               }
+            }
+
+            .loc-desc {
+               color: $white;
+               font-family: $mossport;
+               font-size: 1.5rem;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 101%; /* 15.15px */
+               text-transform: uppercase;
+               background: $black;
+               padding: 0.3rem 0.5rem 0.3rem 1.2rem;
+               white-space: nowrap;
+               height: 1.7rem;
+               display: flex;
+               align-items: center;
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%);
+               left: 0.9rem;
+               z-index: 30;
+               opacity: 0;
+               visibility: hidden;
+               transform: translateY(-50%) translateX(-0.5rem);
+               transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+
+               &.show {
+                  opacity: 1;
+                  visibility: visible;
+                  transform: translateY(-50%) translateX(0);               
+               }
+             }
+         }
+
+         
       
 
          img {
@@ -179,13 +275,14 @@
          justify-content: space-between;
 
          @media (max-width: $laptop) {
-           gap: 2.3rem;
+           gap: 1rem;
          }
       }
 
       .map-places-item{
          display: flex;
          flex-direction: row;
+         align-items: center;
          gap: 2rem;
       }
 
@@ -239,6 +336,12 @@
 
       @media (max-width: $laptop) {
          gap: 1.4rem;
+      }
+
+      svg {
+         @media (max-width: $laptop) {
+            height: 4;
+         }
       }
 
       .crosses {

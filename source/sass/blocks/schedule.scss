@@ -31,7 +31,7 @@
 
       .crosses-pseudo {
          position: absolute;
-         top: 14.8rem;
+         top: 17.8rem;
          right: 28.5%;
 
          @media (max-width: $tablet) {
@@ -56,12 +56,12 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin-block: 8rem 4.5rem;
+      margin-block: 8rem 6.5rem;
 
       @media (max-width: $tablet) {
          flex-direction: column-reverse;
          gap: 5rem;
-         margin-block: 5.2rem 3.2rem;
+         margin-block: 17.8rem 3.2rem;
       }
    }
 
@@ -118,7 +118,36 @@
 
   
 
+   //Activities
 
+   .activity-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.6rem 3rem;
+      margin-bottom: 7rem;
+
+      @media (max-width: $tablet) {
+         gap: 0.9rem;
+         margin-bottom: 0;
+      }
+    }
+
+   .activity-item {
+      color: $green;
+      font-family: $mossport;
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 101%; /* 40.4px */
+      text-transform: uppercase;
+      padding: 1.4rem 1.3rem;
+      background-color: $white;
+      white-space: nowrap; 
+
+      @media (max-width: $tablet) {
+         font-size: 2.4rem;
+      }
+   }
 
 
    //Stages
@@ -136,11 +165,27 @@
 
    .stage-container-bottom {
       padding: 5.3rem 5.2rem;
+      display: flex;
+      flex-direction: column;
 
          @media (max-width: $mobile) {
-            padding: 3rem 2.5rem 4.8rem;
+            padding: 2.3rem;
+         }
+
+         svg {
+            align-self: flex-end;
+            margin-right: 7rem;
+            margin-bottom: 3rem;
+
+            @media (max-width: $tablet) {
+               display: none;
+            }
          }
    }
+
+
+
+
 
    .stage-switcher {
 
@@ -180,9 +225,11 @@
       }
 
       &__text {
-         max-width: 84.4rem;
+         max-width: 80 rem;
          color: $white;
          line-height: normal;
+
+         
       }
    }
 
@@ -355,18 +402,22 @@
    }
 
    &__text-wrapper {
-      padding-block: 6.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding-block: 6.6rem 5.8rem;
       position: relative;
 
       @media (max-width: $mobile) {
          padding-block: 3.5rem;
+         gap: 3rem;
          // font-size: 1.4rem;
       }
 
       .arrows-green-big-pseudo {
          position: absolute;
          right: 0;
-         top: 11rem;
+         top: 13.5rem;
 
          @media (max-width: $mobile) {
             display: none;
@@ -547,14 +598,16 @@
 
       @media (max-width: $tablet) {
          margin-top: 3rem;
+         justify-content: flex-end;
       }
 
       .dots {
-         margin-bottom: 2.5rem;
+         margin-bottom: 5.5rem;
 
          @media (max-width: $tablet) {
             width: 20rem;
-            margin-bottom: 0;
+            margin-block: 5rem;
+            z-index: 20;
          }
       }
 
@@ -564,12 +617,18 @@
       // }
 
       .green-cross {
+         margin-top: -18rem;
+         margin-bottom: 6rem;
+
          @media (max-width: $tablet) {
-            // position: absolute;
-            width: 39rem;  
-            margin-top: -5rem;
-            margin-left: -5rem;
+            position: absolute;
+            width: 29rem;  
+            // margin-top: -5rem;
+            // margin-left: -5rem;
+            left: -10rem;
             z-index: 3;
+            margin-top: 0;
+            margin-bottom: -2rem;
          }
       }
 
