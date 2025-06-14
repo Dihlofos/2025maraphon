@@ -1,7 +1,7 @@
 .info {
    background-color: $white;
    // padding-bottom: 17rem;
-   
+
    .info-container {
       position: relative;
 
@@ -40,7 +40,7 @@
          }
       }
 
-      
+
    }
 
    .info-wrapper {
@@ -58,7 +58,7 @@
    }
 
    .slider-wrapper-info {
-      .info-button-prev, 
+      .info-button-prev,
       .info-button-next {
          display: none;
 
@@ -73,19 +73,19 @@
       }
 
       .slider-wrapper-info {
-         overflow: visible;          
-         position: relative;       
+         overflow: visible;
+         position: relative;
        }
-       
+
        .js-info-swiper-container {
          overflow: visible;
        }
-      
+
    }
 
-   
+
    .slider-wrapper-info {
-       
+
       .buttons-wrapper {
          display: flex;
          flex-direction: row;
@@ -97,7 +97,7 @@
          }
       }
 
-      
+
    }
 
    &__title {
@@ -112,9 +112,9 @@
       }
    }
 
-   
-    
-    
+
+
+
 
    &__list {
       display: flex;
@@ -173,6 +173,7 @@
       font-size: 15px;
       line-height: normal;
       color: $white;
+      max-width: 92%;
    }
 
    &__svgs-wrapper {
@@ -193,7 +194,7 @@
       }
 
       @media (max-width: $mobile) {
-         gap: 1.8rem; 
+         gap: 1.8rem;
 
          svg {
             max-width: 100%;
@@ -209,7 +210,7 @@
             display: none;
 
          }
-         
+
       }
    }
 
@@ -252,9 +253,9 @@
       .slider-wrapper {
          max-width: 127rem;
          margin: 0 auto;
-         padding: 0 3rem; 
+         padding: 0 3rem;
          position: relative;
-       
+
          @media (max-width: $laptop) {
             max-width: 116rem;
             padding: 0rem;
@@ -265,13 +266,13 @@
             max-width: initial;
             padding: 0 24px;
           }
-        
+
           @media (max-width: $mobile) {
             padding: 0 16px;
           }
-       
-         
-   
+
+
+
          .slider__btn {
             position: absolute;
             top: 56%;
@@ -294,10 +295,10 @@
                   height: 3.5rem;
                 }
             }
-            
-      
+
+
             &--prev {
-               left: 0;  
+               left: 0;
 
                @media (max-width: $tablet) {
                   padding-left: 2.4rem;
@@ -307,9 +308,9 @@
                   padding-left: 1.6rem;
                 }
             }
-      
+
             &--next {
-               right: 0;  
+               right: 0;
 
                @media (max-width: $laptop) {
                   left: 5.81rem;
@@ -325,7 +326,7 @@
                 }
             }
 
-            
+
          }
 
          // .info-button-prev,
@@ -335,23 +336,23 @@
          //       height: 3.5rem;
          //    }
          // }
-   
+
          .info-button-prev::after,
          .info-button-next::after {
             display: none;
          }
-    
+
       }
-       
+
       .slider {
-         width: 116rem;      
-         margin: 0 auto;    
+         width: 116rem;
+         margin: 0 auto;
          overflow: hidden;
 
          @media (max-width: $tablet) {
             width: auto;
           }
-      } 
+      }
 
       .zone-slider-item {
          display: flex;
@@ -372,12 +373,12 @@
             padding: 4rem 1.9rem 2.6rem 3.7rem;
          }
       }
-   
+
       .zone-slider-item-title {
          font-family: $mossport;
          font-size: 3.5rem;
          font-weight: 400;
-         line-height: 101%; 
+         line-height: 101%;
          text-transform: uppercase;
          color: $white;
 
@@ -385,7 +386,7 @@
             font-size: 2.4rem;
          }
       }
-   
+
       .zone-slider-item-content {
          font-family: $myriad;
          font-size: 1.5rem;
@@ -393,7 +394,7 @@
          line-height: normal;
          color: $white;
       }
-   
+
       .zone-slider-item-list {
          list-style-type: none;
          margin: 0;
@@ -404,23 +405,23 @@
          line-height: 110%; /* 27.5px */
          text-transform: uppercase;
          color: $green;
-         
+
          @media (max-width: $mobile) {
             line-height: 104%;
             margin-top: -0.4rem;
          }
-       
+
          li {
            position: relative;
-           padding-left: 2.3rem; 
-   
+           padding-left: 2.3rem;
+
            &::before {
-               content: '•'; 
+               content: '•';
                position: absolute;
                left: 0;
                top: 0;
             }
          }
-      } 
-   }  
+      }
+   }
 }

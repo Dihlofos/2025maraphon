@@ -9,6 +9,14 @@
       overflow: visible;
     }
 
+    &__btn {
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+
     &__slide-location {
       display: flex;
       justify-content: center;
