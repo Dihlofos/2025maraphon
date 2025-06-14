@@ -37,8 +37,8 @@
          }
 
       }
-   
-   
+
+
       &__place {
          background-color: $green;
          padding: 1.3rem 6rem 1.3rem 2.45rem;
@@ -49,13 +49,13 @@
             calc(100% - 20px) 100%,
             0% 100%
          );
-   
+
          @media (max-width: $mobile) {
             padding: 0.9rem 1.5rem 0.9rem 1.17rem;
          }
-   
+
       }
-   
+
       &__place-wrapper {
          display: flex;
          flex-direction: row;
@@ -72,13 +72,13 @@
       }
 
       &__place-icon {
-   
+
          @media (max-width: $mobile) {
             width: 25.358px;
             height: 25.358px;
          }
       }
-   
+
       &__place-text {
          font-family: $mossport;
          font-size: 3.5rem;
@@ -91,8 +91,8 @@
          @media (max-width: $tablet) {
             max-width: 100%;
          }
-   
-   
+
+
 
          .nowrap {
             white-space: nowrap;
@@ -116,30 +116,34 @@
       }
 
       @media (max-width: $tablet) {
-         padding: 3.8rem 3rem;  
-         
+         padding: 3.8rem 3rem;
+
       }
 
       .map-frame-wrapper {
-            width: 100%;
-            aspect-ratio: 5 / 4; // то же самое, что 500 / 400
-            position: relative;
-            overflow: hidden;
-      
-          
-             iframe {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-          }
+        width: 100%;
+        aspect-ratio: 11 / 6;
+        position: relative;
+        overflow: hidden;
+
+        @media (max-width: $tablet) {
+          aspect-ratio: 5 / 4;
+        }
+
+
+        iframe {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
       }
 
       .arrow-wrapper {
          display: none;
 
-         @media (max-width: $laptop) {             
+         @media (max-width: $laptop) {
             display: flex;
             width: 100%;
             justify-content: center;
@@ -187,7 +191,7 @@
                line-height: 101%; /* 35.35px */
                text-transform: uppercase;
                transition: background-color 0.3s ease, color 0.3s ease;
-      
+
                @media (max-width: $mobile) {
                   width: 0.98rem;
                   height: 0.98rem;
@@ -228,13 +232,13 @@
                &.show {
                   opacity: 1;
                   visibility: visible;
-                  transform: translateY(-50%) translateX(0);               
+                  transform: translateY(-50%) translateX(0);
                }
              }
          }
 
-         
-      
+
+
 
          img {
             z-index: 1;
@@ -276,7 +280,7 @@
                circle {
                  fill: $bgcolor;
                }
-         
+
                path {
                  fill: $black;
                }
@@ -367,7 +371,7 @@
       }
    }
 
-  
+
 }
 
 
