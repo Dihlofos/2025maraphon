@@ -16,7 +16,7 @@
             width: 23.8rem;
             right: -3.3rem;
          }
-   
+
       }
    }
 
@@ -40,26 +40,26 @@
          display: grid;
          gap: 1.29rem;
          height: auto;
-       
+
            grid-template-columns: 5.4rem auto;
            grid-template-rows: auto auto;
-       
+
            .hero__logos {
              grid-column: 1 / -1;
              justify-content: center;
            }
-       
+
            .hero__top-arrow {
              grid-column: 1;
              align-self: center;
            }
-       
+
            .cut-corner-bottom {
              grid-column: 2;
              align-self: center;
            }
          }
-      
+
 
       //  @media (max-width: $mobile) {
       //    margin: 0 0 4rem;
@@ -177,7 +177,7 @@
          line-height: 100%;
          color: $white;
          margin-left: 1.45rem;
-   
+
          @media (max-width: $tablet) {
             font-size: 5.2rem;
             margin-left: 1rem;
@@ -185,7 +185,7 @@
       }
    }
 
-   
+
 
    // Portal
 
@@ -384,8 +384,8 @@
    }
 
 
-   // Info   
-   
+   // Info
+
    &__svg-decorations {
       display: flex;
       flex-direction: row;
@@ -413,7 +413,7 @@
          @media (max-width: $mobile) {
             width: 15.5rem;
          }
-         
+
       }
 
       .svg-decorations-arrow {
@@ -484,10 +484,9 @@
    &__content-text {
       font-family: $myriad;
       font-size: 2.5rem;
-      font-weight: 400; 
+      font-weight: 400;
       line-height: 115%;
-      color: $white;    
-      
+
       @media (max-width: $mobile) {
          font-size: 1.4rem;
          line-height: normal;
@@ -495,7 +494,7 @@
    }
 
    &__content-text span {
-      color: $black;     
+      color: $black;
    }
 
    &__content-right {
