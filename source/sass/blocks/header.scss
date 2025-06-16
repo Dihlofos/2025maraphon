@@ -1,3 +1,12 @@
+header {
+   position: fixed;
+   top: 8rem;
+   left: 0;
+   width: 100%;
+   z-index: 1000; 
+   transition: top 0.3s ease;
+}
+
 .header {
    padding: 1.6rem 4.3rem 2rem 3.2rem;
    background-color: $black;
@@ -14,6 +23,7 @@
       calc(100% - 30px) 100%,
       0% 100%
    );
+   
 
    &__nav {
       padding-inline: 5rem 2rem;
