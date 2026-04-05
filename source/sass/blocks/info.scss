@@ -1,6 +1,5 @@
 .info {
    background-color: $white;
-   // padding-bottom: 17rem;
 
    .info-container {
       position: relative;
@@ -32,7 +31,7 @@
 
       .crosses-pseudo {
          position: absolute;
-         top: 47rem;
+         top: 28rem;
          right: 3rem;
 
          @media (max-width: $tablet) {
@@ -44,8 +43,8 @@
    }
 
    .info-wrapper {
-      padding-top: 14.5rem;
-      padding-bottom: 14.5rem;
+      padding-top: 11.5rem;
+      padding-bottom: 12.7rem;
 
       @media (max-width: $tablet) {
          padding-top: 8.5rem;
@@ -60,7 +59,8 @@
    .slider-wrapper-info {
       .info-button-prev,
       .info-button-next {
-         display: none;
+         display: block;
+         cursor: pointer;
 
          @media (max-width: $tablet) {
             display: block;
@@ -89,8 +89,8 @@
       .buttons-wrapper {
          display: flex;
          flex-direction: row;
-         gap: 1.5rem;
-         // margin-top: 6.75rem;
+        gap: 1.4rem;
+         margin-bottom: 2.3rem;
 
          @media (max-width: $mobile) {
             gap: 0.7rem;
@@ -105,22 +105,19 @@
    }
 
    &__title-info {
-      color: $green;
+      color: $black;
+      margin: 0 0 0;
 
       @media (max-width: $mobile) {
          padding-bottom: 7rem;
       }
    }
 
-
-
-
-
    &__list {
       display: flex;
       flex-direction: row;
       gap: 4rem;
-      margin-block: 9.1rem 12.3rem;
+      margin-block: 7.1rem 5rem;
 
       @media (max-width: $tablet) {
          gap: 0;
@@ -129,11 +126,11 @@
    }
 
    &__item-wrapper {
-      padding: 2rem 1.6rem 3.2rem 1.7rem;
+      padding: 2.1rem 1.6rem 2.5rem 2.1rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      background-color: $black;
+      gap: 1rem;
+      background-color: $green;
       max-width: 26rem;
       height: auto;
 
@@ -155,11 +152,11 @@
 
    &__item-title {
       font-family: $mossport;
-      font-size: 3.5rem;
+      font-size: 4rem;
       font-weight: 400;
       line-height: 101%; /* 35.35px */
       text-transform: uppercase;
-      color: $green;
+      color: $white;
 
       @media (max-width: $tablet) {
          font-size: 2.4rem;
@@ -168,17 +165,17 @@
 
    &__item-text {
       font-family: $myriad;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      font-size: 15px;
-      line-height: normal;
+      line-height: 1.2;
       color: $white;
-      max-width: 92%;
+      max-width: 84%;
    }
 
    &__svgs-wrapper {
       display: flex;
       flex-direction: row;
+      color: $green;
       gap: 2.8rem;
 
       .arrows {
@@ -424,4 +421,69 @@
          }
       }
    }
+
+   // Calendar
+
+  &__calendar {
+    background-color: $black;
+    color: $white;
+    padding: 6rem 4rem;
+    margin-top: 11.6rem;
+    position: relative;
+  }
+
+  &__calendar-title {
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: $mossport;
+    font-size: 6.8rem;
+    margin: 0 0 2rem;
+    line-height: 0.7;
+  }
+
+  &__calendar-text {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    max-width: 77.7rem;
+  }
+
+  &__calendar-decor {
+    position: absolute;
+    right: 4rem;
+    top: 6rem;
+  }
+
+  &__calendar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 4.4rem;
+  }
+
+  &__calendar-item {
+    text-transform: uppercase;
+    font-family: $mossport;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 400;
+    &:not(:last-child) {
+      margin: 0 0 2.1rem;
+    }
+    span {
+      font-weight: 400;
+      color: $green;
+    }
+  }
+
+  &__calendar-button {
+    font-size: 4rem;
+        padding: 1rem 3rem;
+    height: auto;
+    margin-bottom: 0.7rem;
+  }
+
+  &__decor-bottom {
+    margin-top: -11rem;
+  }
 }

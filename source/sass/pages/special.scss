@@ -1,6 +1,5 @@
 .special-projects {
    background-color: $black;
-   padding-top: 0;
 
 
    .top-pseudo-container {
@@ -32,10 +31,9 @@
    }
 
    // Header
-  
+
    .header {
       background-color: $white;
-      margin-block: 7.9rem 10.2rem;
 
 
       &__nav-item {
@@ -114,25 +112,25 @@
 
       .logo--dep {
          width: 91px;
-   
+
          @media (max-width: $tablet) {
             width: 55.8px;
-   
+
           }
       }
-   
+
       .logo--sport {
          width: 108px;
-   
+
          @media (max-width: $tablet) {
             width: 66.3px;
-   
+
           }
       }
-   
+
       .logo--pobeda {
          width: 32px;
-   
+
          @media (max-width: $tablet) {
             width: 19.6px;
           }
@@ -205,7 +203,7 @@
                height: 2.6rem
             }
          }
-         
+
       }
 
       &__title {
@@ -242,7 +240,7 @@
       }
 
       &__item--registration {
-         background-color: $bgcolor; 
+         background-color: $bgcolor;
 
          .status-upcoming {
             display: none;
@@ -262,7 +260,7 @@
       }
 
       &__item--upcoming {
-         background-color: $grey; 
+         background-color: $grey;
 
          @media (max-width: $laptop) {
             background-color: #AEAEAE;
@@ -286,7 +284,7 @@
       }
 
       &__item--past {
-         background-color: $bgcolor; 
+         background-color: $bgcolor;
 
          .status-registration {
             display: none;
@@ -355,7 +353,7 @@
                height: 2.5rem;
             }
          }
-         
+
       }
 
       .places-item-text {
@@ -449,7 +447,7 @@
       //    }
       // }
 
-      // .registration-link, 
+      // .registration-link,
       // .past-event,
       // .upcoming-event {
       //    @media (max-width: $mobile) {
@@ -522,58 +520,58 @@
          gap: 4rem;
          justify-content: space-between;
       }
-   
+
       .footer-top {
          @media (max-width: $laptop) {
             margin-bottom: 3.9rem;
          }
       }
-   
+
       .footer-top img {
          @media (max-width: $laptop) {
             display: none;
          }
       }
-   
+
       .crosses {
          @media (max-width: $mobile) {
-            width: 11.7rem;         
+            width: 11.7rem;
          }
-         
+
       }
-   
+
       .hide-dots {
          display: none;
-   
+
          @media (max-width: $laptop) {
             display: block;
          }
       }
-   
+
       .dots-wrapper {
          display: flex;
          flex-direction: column;
          gap: 3.6rem;
-   
+
          @media (max-width: $tablet) {
             gap: 2.36rem;
          }
          @media (max-width: $mobile) {
-            width: 16.4rem;     
-            margin-bottom: 1.5rem;    
+            width: 16.4rem;
+            margin-bottom: 1.5rem;
          }
       }
-   
+
       .footer-text {
          color: $white;
          line-height: normal;
       }
-   
+
       .footer-bottom {
          margin-top: 3.6rem;
       }
 
    }
 
-   
+
 }

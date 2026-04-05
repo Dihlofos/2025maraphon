@@ -1,11 +1,38 @@
 .map {
-   padding-block: 13.1rem 8rem;
-   background-color: $bgcolor;
+  padding-block: 11.6rem 13rem;
+   background-color: $green;
 
    @media (max-width: $laptop) {
       padding-block: 4rem;
 
    }
+
+   &__marker {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 1rem;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: $mossport;
+    color: $white;
+    width: 3.7rem;
+    height: 4.5rem;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="45" viewBox="0 0 37 45" fill="none"><path d="M18.344 0.916992C28.2325 0.916992 36.2483 8.93381 36.2483 18.8223C36.2478 28.7108 18.344 44.5596 18.344 44.5596C18.2613 44.4863 0.440138 28.6878 0.439697 18.8223C0.439697 8.93384 8.45559 0.917052 18.344 0.916992Z" fill="%23EB3333"/></svg>');
+    background-size: contain;
+    cursor: pointer;
+    font-size: 2.9rem;
+
+    &.is-active {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="44" viewBox="0 0 37 44" fill="none"><path d="M18.4084 0.136719C28.2969 0.136719 36.3127 8.15353 36.3127 18.042C36.3126 27.9172 18.4562 43.737 18.4084 43.7793C18.3157 43.6971 0.504335 27.9047 0.50415 18.042C0.50415 8.15355 8.52001 0.136749 18.4084 0.136719Z" fill="%233B3393"/></svg>');
+    }
+
+    @media (max-width: $mobile) {
+      width: 1.9rem;
+      height: 2.3rem;
+      font-size: 1.5rem;
+      padding-top: 0rem;
+    }
+  }
 
    .map-header {
       display: flex;
@@ -13,7 +40,7 @@
       justify-content: space-between;
       gap: 3rem;
       align-items: center;
-      margin-bottom: 9.4rem;
+      margin-bottom: 7.4rem;
       position: relative;
 
       @media (max-width: $laptop) {
@@ -40,7 +67,7 @@
 
 
       &__place {
-         background-color: $green;
+         background-color: $bgcolor;
          padding: 1.3rem 6rem 1.3rem 2.45rem;
          clip-path: polygon(
             0% 0%,
@@ -101,12 +128,12 @@
    }
 
    .map-container {
-      padding: 4.6rem;
+      padding: 5rem;
       background-color: $white;
       clip-path: polygon(55px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 55px);
       display: flex;
       flex-direction: row;
-      gap: 3.4rem;
+      gap: 4rem;
       margin-bottom: 7.45rem;
 
       @media (max-width: $laptop) {
@@ -138,6 +165,39 @@
           height: 100%;
           border: 0;
         }
+      }
+
+      .map-legend {
+        font-family: $mossport;
+        text-transform: uppercase;
+        width: 30.8rem;
+        flex-shrink: 0;
+      }
+
+      .map-legend-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2.4rem;
+        line-height: 1;
+
+        &:not(:last-child) {
+          margin-bottom: 0.8rem;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white;
+          font-family: $mossport;
+          width: 3.2rem;
+          height: 3.2rem;
+          border-radius: 50%;
+          background-color: $green;
+          flex-shrink: 0;
+        }
+
       }
 
       .arrow-wrapper {

@@ -18,7 +18,7 @@
    }
 
    &__title {
-      color: $green;
+      color: $black;
 
       @media (max-width: $laptop) {
          max-width: 40rem;
@@ -45,7 +45,7 @@
          display: none;
          @media (max-width: $tablet) {
             display: block;
-            
+
           }
       }
    }
@@ -71,8 +71,8 @@
       @media (max-width: $tablet) {
          row-gap: 2.57rem;
          width: 100%;
-         column-gap: unset; 
-         justify-items: stretch; 
+         column-gap: unset;
+         justify-items: stretch;
       }
 
    }
@@ -88,7 +88,7 @@
          }
       }
 
-      
+
    }
 
    &__dots-image {

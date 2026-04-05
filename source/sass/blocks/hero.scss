@@ -21,7 +21,7 @@
    }
 
    .hero-wrapper {
-      padding-bottom: 15rem;
+      padding-bottom: 15.9rem;
 
       @media (max-width: $tablet) {
          padding-bottom: 5.3rem;
@@ -69,10 +69,10 @@
    &__logos {
       display: flex;
       flex-direction: row;
-      gap: 6rem;
+      gap: 4.8rem;
       align-items: center;
-      justify-content: center;
-      max-width: 52.7rem;
+      justify-content: flex-start;
+      padding: 2rem 6rem;
 
        @media (max-width: $tablet) {
          padding-block: 1.1rem;
@@ -92,31 +92,15 @@
    }
 
    .logo--dep {
-      width: 11rem;
-      margin-top: 0.4rem;
 
-      @media (max-width: $tablet) {
-         width: 55.8px;
-
-       }
    }
 
    .logo--sport {
-      width: 13rem;
 
-      @media (max-width: $tablet) {
-         width: 66.3px;
-
-       }
    }
 
    .logo--pobeda {
-      width: 32px;
 
-      @media (max-width: $tablet) {
-         width: 19.6px;
-
-       }
    }
 
    &__top-arrow {
@@ -130,7 +114,7 @@
       height: 100%;
       background-color: $white;
 
-      clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
+      clip-path: polygon(20% 0,93% 0,100% 50%,100% 80%,100% 100%,0 100%,0 80%,0 0);
 
       @media (max-width: $tablet) {
          clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30px);
@@ -176,12 +160,20 @@
          font-size: 9rem;
          line-height: 100%;
          color: $white;
-         margin-left: 1.45rem;
+         margin-left: 4rem;
 
          @media (max-width: $tablet) {
             font-size: 5.2rem;
             margin-left: 1rem;
          }
+      }
+
+      .text-small-green {
+        font-family: $mossport;
+        color: $green;
+        font-size: 4rem;
+        margin-left: 2.5rem;
+        margin-top: 3.5rem;
       }
    }
 
@@ -191,9 +183,10 @@
 
    &__portal-wrapper {
       background-color: $black-100;
-      padding: 0.8rem 3.4rem 0.5rem;
+      padding: 0.8rem 2.4rem 0.5rem;
       width: fit-content;
-      margin-top: 2.3rem;
+      border-radius: 30px;
+      margin-top: 4rem;
 
       @media (max-width: $tablet) {
          width: 100%;
@@ -228,7 +221,7 @@
    // Tittle
 
    &__title-wrapper {
-      margin-block: 3.5rem 8rem;
+      margin-block: 3.5rem 3.8rem;
       width: 100%;
       max-width: fit-content;
       margin-inline: auto;
@@ -260,6 +253,7 @@
       display: inline-block;
       width: 100%;
       text-transform: uppercase;
+      line-height: 0.95;
       // margin-bottom: -4rem;
 
       @media (max-width: $tablet) {
@@ -292,7 +286,7 @@
    &__place {
       background-color: $green;
       padding: 1rem 6rem 1rem 2.45rem;
-      margin-bottom: 6rem;
+      margin-bottom: 8.5rem;
       clip-path: polygon(
          0% 0%,
          100% 0%,
@@ -342,13 +336,13 @@
 
    &__place-text {
       font-family: $mossport;
-      font-size: 3.5rem;
+      font-size: 4rem;
       font-weight: 400;
       line-height: 101%;
       text-transform: uppercase;
       color: $white;
       max-width: 50.1rem;
-      margin-left: 0.6rem;
+      margin-left: -2.4rem;
 
       @media (max-width: $tablet) {
          max-width: 100%;
@@ -451,154 +445,33 @@
    // Content
 
    &__content-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 4rem;
-      margin-top: 7.44rem;
-
-      @media (max-width: $tablet) {
-         flex-direction: column-reverse;
-         gap: 3.4rem;
-       }
-
-       @media (max-width: $mobile) {
-         margin-top: 6rem;
-      }
+    display: flex;
+    gap: 8.6rem;
+    padding-bottom: 7rem;
    }
 
    &__content-left {
-      flex: 59%;
-      display: flex;
-      flex-direction: column;
-      gap: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 
-      @media (max-width: $tablet) {
-         gap: 2rem;
-      }
+  &__content-left-cross {
+    position: absolute;
+    bottom: -12rem;
+  }
 
-      @media (max-width: $mobile) {
-         gap: 1.4rem;
-      }
-   }
+  &__content-right {
+    max-width: 67.4rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-top: -1rem;
 
-   &__content-text {
-      font-family: $myriad;
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: 115%;
+    p:not(:last-child) {
+      margin: 0 0 2rem;
+    }
+  }
 
-      @media (max-width: $mobile) {
-         font-size: 1.4rem;
-         line-height: normal;
-      }
-   }
-
-   &__content-text span {
-      color: $black;
-   }
-
-   &__content-right {
-      flex: 41%;
-      position: relative;
-
-      .pseudo-arrows {
-         position: absolute;
-         top: -17rem;
-         left: 50%;
-         transform: translateX(-78%);
-         display: flex;
-         flex-direction: row;
-         gap: 1rem;
-
-         @media (max-width: $tablet) {
-           display: none;
-         }
-      }
-
-      .right-arrow {
-         margin-left: -6rem;
-      }
-   }
-
-   &__content-link-container-big {
-      margin-top: 5.2rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      gap: 3.7rem;
-
-      @media (max-width: $tablet) {
-         display: none;
-       }
-
-       img {
-         max-width: 19rem;
-       }
-   }
-
-   &__content-link-container-small {
-      display: none;
-
-      @media (max-width: $tablet) {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         gap: 3.99rem;
-         margin-top: -0.7rem;
-      }
-
-       img {
-         width: 13.7rem;
-      }
-   }
-
-   &__content-link-container-big img {
-      flex: 1;
-   }
-
-   &__content-link-wrapper {
-      flex: 1;
-
-      @media (max-width: $tablet) {
-         max-width: 35.2rem;
-      }
-   }
-
-   &__content-link-wrapper-top,
-   &__content-link-wrapper-bottom {
-      width: 100%;
-      height: 3.8rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-   }
-
-   &__content-link-wrapper-top {
-      background-color: $red;
-   }
-
-   &__content-link-wrapper-text {
-      font-family: $mossport;
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: uppercase;
-      color: $white;
-   }
-
-   &__content-link-wrapper-bottom {
-      background-color: $white;
-   }
-
-   &__content-link-wrapper-bottom a {
-      font-family: $myriad;
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: $black;
-   }
 
 }
 

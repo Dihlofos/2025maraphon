@@ -77,6 +77,9 @@
       font-size: 2rem;
       font-weight: 400;
       line-height: 110%; /* 22px */
+      ul {
+        max-width: 70rem;
+      }
 
       @media (max-width: $mobile) {
          font-size: 1.4rem;
@@ -111,7 +114,8 @@
       }
 
       .dots {
-
+        position: relative;
+        top: -5rem;
          @media (max-width: $tablet) {
             align-self: flex-end;
          }
