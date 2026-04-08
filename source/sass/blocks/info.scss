@@ -10,12 +10,12 @@
          right: 3rem;
 
          @media (max-width: $tablet) {
-            width: 30rem;
+            width: 23.8rem;
+            right: -3.3rem;
          }
 
          @media (max-width: $mobile) {
-            width: 23.8rem;
-            right: -3.3rem;
+          right: -15.3rem;
          }
       }
 
@@ -83,8 +83,46 @@
 
    }
 
+   .slider {
+    .swiper-slide {
+      @media (max-width: $mobile) {
+        width: 100% !important;
+        height: auto;
+        aspect-ratio: 343/231;
+      }
+    }
+   }
+
 
    .slider-wrapper-info {
+    position: relative;
+      @media (max-width: $mobile) {
+        .slider__btn {
+          width: 3.6rem;
+          height: 3.6rem;
+          rect {
+            fill: $white !important;
+          }
+          path {
+            fill: $green !important;
+          }
+        }
+
+        .swiper-button-disabled {
+          opacity: 0;
+        }
+
+        .buttons-wrapper {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 1.2rem;
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 10;
+        }
+      }
 
       .buttons-wrapper {
          display: flex;
@@ -109,7 +147,7 @@
       margin: 0 0 0;
 
       @media (max-width: $mobile) {
-         padding-bottom: 7rem;
+         padding-bottom: 2.5rem;
       }
    }
 
@@ -120,8 +158,13 @@
       margin-block: 7.1rem 5rem;
 
       @media (max-width: $tablet) {
-         gap: 0;
+         gap: 2rem;
          margin-block: 1.5rem 4rem;
+      }
+
+      @media (max-width: $mobile) {
+        flex-direction: column;
+        gap: 1.5rem;
       }
    }
 
@@ -133,7 +176,6 @@
       background-color: $green;
       max-width: 26rem;
       height: auto;
-
       clip-path: polygon(
          0% 0%,
          100% 0%,
@@ -146,6 +188,20 @@
       @media (max-width: $tablet) {
          padding: 2.2rem 2.8rem 2rem 2.4rem;
          gap: 2.4rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.4rem 1rem 3.6rem 1.4rem;
+        gap: 1.2rem;
+        clip-path: polygon(
+         0% 0%,
+         100% 0%,
+         100% calc(100% - 75px),
+         calc(100% - 75px) 100%,
+         0% 100%
+      );
       }
 
    }
@@ -161,6 +217,10 @@
       @media (max-width: $tablet) {
          font-size: 2.4rem;
       }
+
+      @media (max-width: $mobile) {
+        font-size: 4rem;
+      }
    }
 
    &__item-text {
@@ -170,6 +230,8 @@
       line-height: 1.2;
       color: $white;
       max-width: 84%;
+
+
    }
 
    &__svgs-wrapper {
@@ -430,6 +492,18 @@
     padding: 6rem 4rem;
     margin-top: 11.6rem;
     position: relative;
+
+    @media (max-width: $mobile) {
+      margin-top: 4.9rem;
+      padding: 3.3rem 1.7rem 4.2rem;
+    }
+  }
+
+  &__calendar-right {
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-top: 3.5rem;
+    }
   }
 
   &__calendar-title {
@@ -440,18 +514,36 @@
     font-size: 6.8rem;
     margin: 0 0 2rem;
     line-height: 0.7;
+
+    @media (max-width: $tablet) {
+      line-height: 1;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 4rem;
+      line-height: 1.1;
+      margin: 0 0 1.8rem;
+    }
   }
 
   &__calendar-text {
     font-size: 2.4rem;
     line-height: 1.2;
     max-width: 77.7rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__calendar-decor {
     position: absolute;
     right: 4rem;
     top: 6rem;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &__calendar-content {
@@ -459,6 +551,12 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 4.4rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 3.4rem;
+    }
   }
 
   &__calendar-item {
@@ -469,18 +567,32 @@
     font-weight: 400;
     &:not(:last-child) {
       margin: 0 0 2.1rem;
+
+      @media (max-width: $mobile) {
+        margin: 0 0 1.5rem;
+      }
     }
     span {
       font-weight: 400;
       color: $green;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 3.2rem;
+    }
   }
 
   &__calendar-button {
     font-size: 4rem;
-        padding: 1rem 3rem;
+    padding: 1rem 3rem;
     height: auto;
     margin-bottom: 0.7rem;
+
+    @media(max-width: $mobile) {
+      font-size: 3.2rem;
+      width: 100%;
+      height: 4.5rem;
+    }
   }
 
   &__decor-bottom {

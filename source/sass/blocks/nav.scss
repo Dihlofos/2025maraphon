@@ -6,12 +6,9 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 1.33rem 1rem 0 0;
-  }
-
-  @media (max-width: $mobile) {
     padding: 0;
     display: none;
+    padding: 2.1rem 1rem 0 0;
 
     &--mobile {
       display: flex;
@@ -28,7 +25,7 @@
   }
 
   &__wrapper {
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       display: none;
       position: fixed;
       top: 0;

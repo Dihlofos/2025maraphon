@@ -4,7 +4,10 @@
 
    @media (max-width: $laptop) {
       padding-block: 4rem;
+   }
 
+   @media (max-width: $mobile) {
+    padding: 4.4rem 0 6rem;
    }
 
    &__marker {
@@ -52,8 +55,26 @@
          gap: 2rem;
       }
 
+      @media (max-width: $mobile) {
+        gap: 3rem;
+        margin-bottom: 3.2rem;
+      }
+
       &__title {
          color: $white;
+         span {
+          display: inline;
+         }
+
+         @media (max-width: $mobile) {
+          font-size: 5.2rem;
+         }
+
+         span {
+          @media (max-width: $mobile) {
+            display: none;
+          }
+         }
       }
 
       .arrows {
@@ -61,6 +82,10 @@
             position: absolute;
             right: 0;
             top: 0;
+         }
+
+         @media (max-width: $mobile) {
+          top: 0.8rem;
          }
 
       }
@@ -144,14 +169,20 @@
 
       @media (max-width: $tablet) {
          padding: 3.8rem 3rem;
+      }
 
+      @media (max-width: $mobile) {
+        clip-path: unset;
+        padding: 2.8rem 1.5rem 4.2rem;
       }
 
       .map-frame-wrapper {
         width: 100%;
-        aspect-ratio: 11 / 6;
         position: relative;
         overflow: hidden;
+        img {
+          width: 100%;
+        }
 
         @media (max-width: $tablet) {
           aspect-ratio: 5 / 4;
@@ -431,7 +462,23 @@
       }
    }
 
+      &__decor {
+        &--desktop {
+          display: block;
+          @media (max-width: $mobile) {
+            display: none;
+          }
+        }
 
+        &--mobile {
+          display: none;
+
+          @media (max-width: $mobile) {
+            display: block;
+            width: 100%;
+          }
+      }
+    }
 }
 
 

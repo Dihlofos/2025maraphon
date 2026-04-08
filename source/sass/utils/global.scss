@@ -44,8 +44,8 @@ body {
     // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
   }
 
-   @media (max-width: $mobile) {
-      padding-top: 2.4rem;
+   @media (max-width: $tablet) {
+      padding-top: 7.2rem;
       font-size: 1.4rem;
    }
 

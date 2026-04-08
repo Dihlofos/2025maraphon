@@ -37,7 +37,7 @@
       },
       breakpoints: {
         768: { spaceBetween: 40 },
-        480: { spaceBetween: 20 },
+        480: { spaceBetween: 20, slidesPerView: 1 },
       },
     });
   }

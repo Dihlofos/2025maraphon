@@ -2,12 +2,15 @@
    background-color: $black;
 
 
+
+
    .top-pseudo-container {
       position: relative;
+      width: 100%;
 
       .pseudo-arrows {
          position: absolute;
-         top: 0;
+         top: -18.6rem;
          right: 3rem;
 
          @media (max-width: $mobile) {
@@ -142,8 +145,9 @@
    .special-section {
       &__header {
          max-width: 88.2rem;
-         margin-bottom: 8.4rem;
+         margin-bottom: 13rem;
          position: relative;
+        margin-top: 4.5rem;
 
          @media (max-width: $laptop) {
             padding-right: 18rem;
@@ -250,11 +254,42 @@
             display: none;
          }
 
+         .status-overflow {
+            display: none;
+         }
+
          .past-event {
             display: none;
          }
 
          .upcoming-event {
+            display: none;
+         }
+      }
+
+      &__item--overflow {
+        background-color: $bgcolor;
+        .status-registration {
+            display: none;
+         }
+
+         .status-upcoming {
+          display: none;
+         }
+
+         .status-past {
+            display: none;
+         }
+
+         .status-overflow {
+            display: block;
+         }
+
+         .past-event {
+            display: none;
+         }
+
+         .registration-link {
             display: none;
          }
       }
@@ -271,6 +306,10 @@
          }
 
          .status-past {
+            display: none;
+         }
+
+         .status-overflow {
             display: none;
          }
 
@@ -291,6 +330,10 @@
          }
 
          .status-upcoming {
+            display: none;
+         }
+
+         .status-overflow {
             display: none;
          }
 
@@ -337,21 +380,27 @@
       }
 
       .places-list {
-         display: flex;
-         flex-direction: column;
-         gap: 1.3rem;
+        display: flex;
+        gap: 12.7rem;
+        flex-wrap: wrap;
+        max-width: 45.3rem;
+        row-gap: 1rem;
+        margin-top: -0.5rem;
       }
 
       .places-item {
          display: flex;
          flex-direction: row;
          gap: 0.8rem;
+         flex-shrink: 0;
 
          img {
-            @media (max-width: $mobile) {
-               width: 2.5rem;
-               height: 2.5rem;
-            }
+          width: 3.2rem;
+          height: 3.2rem;
+          @media (max-width: $mobile) {
+              width: 2.5rem;
+              height: 2.5rem;
+          }
          }
 
       }
@@ -363,11 +412,21 @@
          font-weight: 400;
          line-height: 101%; /* 35.35px */
          text-transform: uppercase;
+         flex-shrink: 0;
 
          @media (max-width: $mobile) {
             font-size: 2.4rem;
 
          }
+      }
+
+      .status {
+        font-size: 1.5rem;
+        line-height: 0.9;
+        padding: 1rem 1.2rem;
+        border-radius: 30px;
+        color: $black;
+        background-color: $white;
       }
 
       .status-registration {
@@ -392,7 +451,6 @@
          border-radius: 30px;
          background: $white;
          border: none;
-         padding: 0.6rem 1rem;
          width: fit-content;
          color: $black-100;
          font-family: $myriad;
@@ -408,6 +466,8 @@
       }
 
       .status-past {
+        background-color: $red;
+        color: $white;
          @media (max-width: $laptop) {
             display: none;
          }
@@ -457,7 +517,7 @@
       // }
 
       .registration-link {
-         padding: 0.3rem 1rem;
+         padding: 1.2rem 2.4rem;
          background-color: $white;
          color: $black;
          font-family: $myriad;
@@ -466,11 +526,16 @@
          line-height: normal;
          text-decoration: none;
          transition: 0.3s ease;
+          font-family: $mossport;
+          color: $green;
+          font-size: 3.6rem;
+          text-transform: uppercase;
+          border-radius: 50px;
+          line-height: 0.9;
 
          &:hover {
             background-color: $green;
             color: $white;
-            border: 2px solid transparent;
          }
 
          @media (max-width: $mobile) {
