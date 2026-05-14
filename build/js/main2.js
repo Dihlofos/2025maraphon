@@ -466,6 +466,7 @@ window.addEventListener("scroll", () => {
     speed: 800,
     speedAsDuration: true,
     easing: "easeOutQuad",
+    offset: 100,
   });
 })();
 
