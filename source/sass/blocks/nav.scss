@@ -15,6 +15,12 @@
     }
   }
 
+  @media (max-width: $mobile) {
+    .special-projects & {
+      padding: 0;
+    }
+  }
+
   &__mobile-toggler {
     position: fixed;
     background: none;

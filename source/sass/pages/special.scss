@@ -1,6 +1,10 @@
 .special-projects {
    background-color: $black;
 
+   @media (max-width: $mobile) {
+    padding-top: 0;
+   }
+
 
 
 
@@ -16,6 +20,7 @@
          @media (max-width: $mobile) {
             // width: 9.6rem;
             right: 0;
+            display: none;
          }
 
          .arrows-up {
@@ -44,6 +49,18 @@
 
          &:hover {
             text-decoration: underline;
+         }
+
+         @media (max-width: $mobile) {
+            color: $white;
+            color: #fff;
+            font-family: "Mossport", "Arial", sans-serif;
+            font-size: 3.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            text-decoration: none;
          }
 
       }
