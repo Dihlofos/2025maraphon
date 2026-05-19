@@ -64,7 +64,7 @@
 
    &__list {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       row-gap: 5.66rem;
       column-gap: 7rem;
 
@@ -85,10 +85,13 @@
       img {
          @media (max-width: $mobile) {
             height: 2.9rem;
+            object-fit: contain;
+
+            &.logo--fahrenheit {
+                height: 6.5rem;
+            }
          }
       }
-
-
    }
 
    &__dots-image {
