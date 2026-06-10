@@ -65,9 +65,12 @@
            </button>
            <ul class="nav__list" style="justify-content: flex-start; gap: 2rem;">
              <li><a data-scroll href="#about" class="nav__item js-scroll">О проекте</a></li>
-            <!--<li><a data-scroll href="#schedule" class="nav__item js-scroll" >Расписание</a></li>
+            <li><a data-scroll href="#schedule" class="nav__item js-scroll" >Расписание</a></li>
             <li><a data-scroll href="#concert" class="nav__item js-scroll">Концерт</a></li>
-            <li><a data-scroll href="#map" class="nav__item js-scroll">Карта</a></li>-->
+            <li><a data-scroll href="#map" class="nav__item js-scroll">Карта</a></li>
+            <li><a data-scroll href="#schedule" class="nav__item js-scroll">Расписание</a></li>
+            <li><a data-scroll href="#chillzone" class="nav__item js-scroll">Зона отдыха</a></li>
+            <li><a data-scroll href="#actions" class="nav__item js-scroll">Активности</a></li>
             <li><a data-scroll href="#faq" class="nav__item js-scroll">Вопросы и ответы</a></li>
             <li><a data-scroll href="#footer" class="nav__item js-scroll">Контакты</a></li>
          </ul>
@@ -80,10 +83,10 @@
                   <nav class="header__nav">
                      <ul class="header__nav-list" style="justify-content: flex-start; gap: 2rem;">
                          <li><a data-scroll href="#about" class="header__nav-item js-scroll">О проекте</a></li>
-                        <!--<li><a data-scroll href="#map" class="header__nav-item js-scroll">Карта с зонами</a></li>
+                        <li><a data-scroll href="#map" class="header__nav-item js-scroll">Карта с зонами</a></li>
                         <li><a data-scroll href="#schedule" class="header__nav-item js-scroll">Расписание</a></li>
                         <li><a data-scroll href="#chillzone" class="header__nav-item js-scroll">Зона отдыха</a></li>
-                        <li><a data-scroll href="#actions" class="header__nav-item js-scroll">Активности</a></li>-->
+                        <li><a data-scroll href="#actions" class="header__nav-item js-scroll">Активности</a></li>
                         <li><a data-scroll href="#footer" class="header__nav-item js-scroll">Контакты</a></li>
                         <li><a data-scroll href="#faq" class="header__nav-item js-scroll">Вопросы и ответы</a></li>
 
@@ -175,6 +178,258 @@
          </section>
 
          <!-- INFO -->
+        <section class="info">
+            <div class="container info-container">
+               <div class="half-green-pseudo">
+                  <img src="img/info/half-green-cross.svg" alt="Half green cross">
+               </div>
+               <div class="crosses-pseudo">
+                  <img src="img/info/crosses.svg" alt="Crosses">
+               </div>
+
+                <div class="info-wrapper" id="about">
+                  <div class="info__main-wrapper">
+                     <h2 class="info__title-info title">Что вас ждет?</h2>
+                     <div class=" slider-wrapper-info">
+                        <div class="swiper-wrapper info__list">
+                            <div class="info__item-wrapper info__slider-item">
+                                <div class="info__item-title">Тренировки со&nbsp;звездами</div>
+                                <div class="info__item-text">Растяжка с&nbsp;Самирой Мустафаевой, тренировка от&nbsp;команды Полины Киценко, фит-рок с&nbsp;диджеем Грувом</div>
+                            </div>
+
+                            <div class="info__item-wrapper info__slider-item">
+                                <div class="info__item-title">Спортивные активности</div>
+                                <div class="info__item-text">Ниндзя-полоса, силомер, футбольный баскетбол, мини-гольф, армрестлинг и&nbsp;сабсокер</div>
+                            </div>
+
+                            <div class="info__item-wrapper info__slider-item">
+                                <div class="info__item-title">Отдых для всей семьи</div>
+                                <div class="info__item-text">Большая детская зона с&nbsp;сухим бассейном, аквагримом и&nbsp;сладкой ватой, музыкальные шоу</div>
+                            </div>
+
+                          </div>
+                     </div>
+                  </div>
+
+                  <div class="slider-wrapper slider-wrapper-info">
+                    <div class="buttons-wrapper">
+                      <div class="slider__btn slider__btn--prev info-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                          <rect width="40" height="40" rx="20" transform="matrix(-1 0 0 1 40 0)" fill="#70B42D"/>
+                          <path d="M22.3908 29.3334L13.332 20.0001L22.3908 10.6667L23.9987 12.3234L16.5479 20.0001L23.9987 27.6767L22.3908 29.3334Z" fill="white"/>
+                        </svg>
+                      </div>
+                      <div class="slider__btn slider__btn--next info-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                          <rect width="40" height="40" rx="20" fill="#70B42D"/>
+                          <path d="M17.6092 29.3334L26.668 20.0001L17.6092 10.6667L16.0013 12.3234L23.4521 20.0001L16.0013 27.6767L17.6092 29.3334Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="slider js-info-swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class=" slider__item swiper-slide info__slider-item">
+                            <img src="img/info/slider/1.jpg" alt="Info 1" width="560" height="375">
+                          </div>
+
+                          <div class=" slider__item swiper-slide info__slider-item">
+                            <img src="img/info/slider/2.jpg" alt="Info 1" width="560" height="375">
+                          </div>
+
+                          <div class=" slider__item swiper-slide info__slider-item">
+                            <img src="img/info/slider/3.jpg" alt="Info 1" width="560" height="375">
+                          </div>
+                          <div class=" slider__item swiper-slide info__slider-item">
+                            <img src="img/people/zumba.jpg" alt="Info 1" width="560" height="375">
+                          </div>
+
+                          <div class=" slider__item swiper-slide info__slider-item">
+                            <img src="img/people/cycling.jpg" alt="Info 1" width="560" height="375">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <img class="info__decor-bottom" src="img/info/decor-bottom.svg" alt="" width="1160" height="260">
+               </div>
+            </div>
+         </section>
+
+         <!-- MAP -->
+         <section class="map">
+            <div class="container">
+               <div class="map-wrapper">
+                  <div class="map-header">
+                     <div class="map-header__title title-big">КАРТА <span>С ЗОНАМИ</span></div>
+                     <img class="arrows" src="img/map/arrows-small.svg" alt="Arrows small" width="160" height="80">
+                     <div class="map-header__place">
+                        <div class="map-header__place-wrapper">
+                           <img class="map-header__place-icon" src="img/hero/place.svg" alt="Place icon">
+                           <div class="map-header__place-text">ОК «Лужники»</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="map-container" id="map">
+                     <div class="map-frame-wrapper js-map">
+                      <img src="img/map/map.svg" alt="" width="712" height="578">
+                     </div>
+                     <div class="map-legend">
+                      <div class="map-legend-item"><span>1</span>Основная сцена</div>
+                      <div class="map-legend-item"><span>2</span>Ниндзя-полоса</div>
+                      <div class="map-legend-item"><span>3</span>Силомер</div>
+                      <div class="map-legend-item"><span>4</span>Армрестлинг</div>
+                      <div class="map-legend-item"><span>5</span>Зона городских видов спорта</div>
+                      <div class="map-legend-item"><span>6</span>Многофункциональный шатер</div>
+                      <div class="map-legend-item"><span>7</span>Зона отдыха (пуфы и лежаки)</div>
+                      <div class="map-legend-item"><span>8</span>Фреш-зона</div>
+                      <div class="map-legend-item"><span>9</span>Кибербар</div>
+                      <div class="map-legend-item"><span>10</span>Петанк</div>
+                      <div class="map-legend-item"><span>11</span>Мини-гольф</div>
+                      <div class="map-legend-item"><span>12</span>Футбольная мельница</div>
+                      <div class="map-legend-item"><span>13</span>Футбольный баскетбол</div>
+                      <div class="map-legend-item"><span>14</span>Сабсокер</div>
+                      <div class="map-legend-item"><span>15</span>Пультовая</div>
+                     </div>
+                  </div>
+                  <img src="img/map/decor.svg" alt="" class="map__decor map__decor--desktop" width="1160" height="128">
+                  <img src="img/map/mobile-bottom-decor.svg" alt="" class="map__decor map__decor--mobile" width="343" height="46">
+               </div>
+            </div>
+         </section>
+
+         <!-- SCHEDULE -->
+
+         <section class="schedule">
+            <div class="schedule-container container">
+              <div class="schedule__top" id="schedule">
+                <div class="schedule__header">
+                  <h2 class="schedule__title-big title-big">Расписание</h2>
+                  <div class="schedule__time">11:00–18:15</div>
+                </div>
+                <div class="schedule__description">
+                    <p>Массовые тренировки со&nbsp;звездами и&nbsp;выступление хедлайнера.</p>
+                </div>
+              </div>
+              <div class="schedule__content">
+                <div class="schedule__cards">
+                  <div class="schedule__card">
+                    <div class="schedule__card-time">11:30–12:15</div>
+                    <div class="schedule__card-text">Растяэка с Самирой Мустафаевой и Алсу</div>
+                    <div class="schedule__card-image">
+                      <img src="img/people/samsu.jpg" alt="" width="328" height="180">
+                    </div>
+                    <a href="https://marafon-trenirovok.timepad.ru/event/4027900/" class="schedule__card-link" target="_blank">Регистрация</a>
+                  </div>
+                  <div class="schedule__card">
+                    <div class="schedule__card-time">12:45–13:30</div>
+                    <div class="schedule__card-text">Фит-рок под Диджея Грува с Митей Фоминым</div>
+                    <div class="schedule__card-image">
+                      <img src="img/people/fomin.jpg" alt="" width="328" height="180">
+                    </div>
+                    <a href="https://marafon-trenirovok.timepad.ru/event/4027913/" class="schedule__card-link" target="_blank">Регистрация</a>
+                  </div>
+                  <div class="schedule__card">
+                    <div class="schedule__card-time">14:00–14:45</div>
+                    <div class="schedule__card-text">Тренировка от команды Полины Киценко и клуба SlimFitClub</div>
+                    <div class="schedule__card-image">
+                      <img src="img/people/kicenko.jpg" alt="" width="328" height="180">
+                    </div>
+                    <a href="https://marafon-trenirovok.timepad.ru/event/4027917/" class="schedule__card-link" target="_blank">Регистрация</a>
+                  </div>
+                  <div class="schedule__card">
+                    <div class="schedule__card-time">15:15–16:00</div>
+                    <div class="schedule__card-text">Пилатес с Анной Щербаковой</div>
+                    <div class="schedule__card-image">
+                      <img src="img/people/scherbakova.jpg" alt="">
+                    </div>
+                    <a href="https://marafon-trenirovok.timepad.ru/event/4027927/" class="schedule__card-link" target="_blank">Регистрация</a>
+                  </div>
+
+                  <div class="schedule__card">
+                    <div class="schedule__card-time">16:30–17:15</div>
+                    <div class="schedule__card-text">Функциональная тренировка с Натаном</div>
+                    <div class="schedule__card-image">
+                      <img src="img/people/natan.jpg" alt="" width="328" height="180">
+                    </div>
+                    <a href="https://marafon-trenirovok.timepad.ru/event/4027967/" class="schedule__card-link" target="_blank">Регистрация</a>
+                  </div>
+
+                  <div class="schedule__card">
+                    <div class="schedule__card-time">17:30–18:15</div>
+                    <div class="schedule__card-text">Зумба под кавер группу</div>
+                    <div class="schedule__card-image">
+                      <img src="img/people/zumba.jpg" alt="" width="328" height="180">
+                    </div>
+                    <a href="https://marafon-trenirovok.timepad.ru/event/4027970/" class="schedule__card-link" target="_blank">Регистрация</a>
+                  </div>
+
+                  <div class="schedule__card">
+                    <div class="schedule__card-time">19:30–19:15</div>
+                    <div class="schedule__card-text">Выступление хедлайнера - Иванушки International</div>
+                    <!-- <div class="schedule__card-image">
+                      <img src="img/schedule/cards/child2.jpg" alt="">
+                    </div> -->
+                    <a class="schedule__card-link" target="_blank">Вход свободный</a>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <img src="img/schedule/decor1.svg" class="schedule__decor schedule__decor--1 schedule__decor--desktop"/>
+              <img src="img/schedule/mobile-decor.svg" class="schedule__decor schedule__decor--1 schedule__decor--mobile "/>
+
+              <div class="schedule__top" id="actions">
+                <div class="schedule__header">
+                  <h2 class="schedule__title-big title-big">СПОРТИВНЫЕ АКТИВНОСТИ</h2>
+                  <div class="schedule__time">11:00–18:15</div>
+                </div>
+                <div class="schedule__description">
+                    <p>Можно попробовать всё&nbsp;&mdash; от&nbsp;классических игр и&nbsp;силовых испытаний до&nbsp;необычных спортивных форматов.</p>
+                    <p>Регистрация не&nbsp;нужна: приходите и&nbsp;участвуйте в&nbsp;порядке очереди.</p>
+                </div>
+              </div>
+
+              <div class="schedule__bullits">
+                <div class="schedule__bullit">Ниндзя-полоса</div>
+                <div class="schedule__bullit">Силомер</div>
+                <div class="schedule__bullit">Футбольный баскетбол</div>
+                <div class="schedule__bullit">Петанк</div>
+                <div class="schedule__bullit">Мини-гольф</div>
+                <div class="schedule__bullit">Армрестлинг</div>
+                <div class="schedule__bullit">Футбольная мельница</div>
+                <div class="schedule__bullit">Кибербар</div>
+                <div class="schedule__bullit">Сабсокер</div>
+              </div>
+
+              <img src="img/schedule/decor2.svg" class="schedule__decor schedule__decor--2"/>
+
+              <div class="schedule__top schedule__bottom-block" id="chillzone">
+                <div class="schedule__header">
+                  <h2 class="schedule__title-big title-big">ЗОНА ОТДЫХА ДЛЯ ДЕТЕЙ И&nbsp;ВЗРОСЛЫХ</h2>
+                  <div class="schedule__time">11:00–18:00</div>
+                </div>
+                <div class="schedule__description">
+                    <p>Расслабляйтесь в&nbsp;удобной зоне отдыха со&nbsp;смузи и&nbsp;протеиновыми коктейлями, пока дети развлекаются и&nbsp;исследуют активности вокруг.</p>
+                </div>
+              </div>
+
+              <div class="schedule__bullits">
+                <div class="schedule__bullit">Сухой бассейн</div>
+                <div class="schedule__bullit">Аквагрим</div>
+                <div class="schedule__bullit">Сладкая вата</div>
+                <div class="schedule__bullit">Автомат «Хватайка»</div>
+                <div class="schedule__bullit">Протеиновые коктейли</div>
+                <div class="schedule__bullit">Лаундж-зона</div>
+                <div class="schedule__bullit">Выдача подарков</div>
+                <div class="schedule__bullit">Смузи</div>
+              </div>
+
+              <img src="img/schedule/decor3.svg" class="schedule__decor schedule__decor--3"/>
+            </div>
+          </section>
+
 
 
          <!-- PARTNERS -->
