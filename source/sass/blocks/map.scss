@@ -45,6 +45,7 @@
       align-items: center;
       margin-bottom: 7.4rem;
       position: relative;
+      z-index: 12;
 
       @media (max-width: $laptop) {
          flex-direction: column;
@@ -463,6 +464,7 @@
    }
 
       &__decor {
+        position: relative;
         &--desktop {
           display: block;
           @media (max-width: $mobile) {
